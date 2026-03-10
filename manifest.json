@@ -1,0 +1,21 @@
+{
+    "name": "Alpha Junior School",
+    "short_name": "Alpha Junior",
+    "description": "Alpha Junior School in Chivhu - Nurturing Excellence through Faith & Merit.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#C8102E",
+    "icons": [
+        {
+            "src": "assets/img/logo.jpg",
+            "sizes": "192x192",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "assets/img/logo.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg"
+        }
+    ]
+}

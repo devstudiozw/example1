@@ -1,267 +1,111 @@
-(function ($)
-  { "use strict"
-  
-/* 1. Proloder */
-    $(window).on('load', function () {
-      $('#preloader-active').delay(450).fadeOut('slow');
-      $('body').delay(450).css({
-        'overflow': 'visible'
-      });
-    });
+/**
+ * ALPHA JUNIOR SCHOOL - MAIN INTERACTIVITY SCRIPT
+ * Project: Alpha Junior School Website
+ * Developer: devstudio.co.zw
+ * Logic: Handle mobile navigation, scroll-triggered animations, and contact form AJAX submissions.
+ */
 
-/* 2. sticky And Scroll UP */
-    $(window).on('scroll', function () {
-      var scroll = $(window).scrollTop();
-      if (scroll < 400) {
-        $(".header-sticky").removeClass("sticky-bar");
-        $('#back-top').fadeOut(500);
-      } else {
-        $(".header-sticky").addClass("sticky-bar");
-        $('#back-top').fadeIn(500);
-      }
-    });
-  // Scroll Up
-    $('#back-top a').on("click", function () {
-      $('body,html').animate({
-        scrollTop: 0
-      }, 800);
-      return false;
-    });
-  
+document.addEventListener('DOMContentLoaded', () => {
 
-/* 3. slick Nav */
-// mobile_menu
-    var menu = $('ul#navigation');
-    if(menu.length){
-      menu.slicknav({
-        prependTo: ".mobile_menu",
-        closedSymbol: '+',
-        openedSymbol:'-'
-      });
+    // --- 1. MOBILE NAVIGATION LOGIC ---
+    // Manages the visibility of the nav menu on smaller screens.
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', () => {
+            // Toggle the visibility class
+            navLinks.classList.toggle('active');
+
+            // Switch the FontAwesome icon between hamburger (bars) and close (times)
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
+
+    // --- 2. SCROLL ANIMATION SYSTEM (Intersection Observer) ---
+    // Triggers CSS animations when elements enter the viewport.
+    const scrollElements = document.querySelectorAll('.animate-on-scroll');
+
+    // Utility function to reveal elements
+    const displayScrollElement = (element) => {
+        element.classList.add('is-visible');
     };
 
+    // Intersection Observer Settings
+    const observerOptions = {
+        root: null, // Relative to the viewport
+        rootMargin: '0px',
+        threshold: 0.15 // Triggers when 15% of the element is visible
+    };
 
-
-
-/* 3. MainSlider-1 */
-    function mainSlider() {
-        var BasicSlider = $('.slider-active');
-        BasicSlider.on('init', function (e, slick) {
-          var $firstAnimatingElements = $('.single-slider:first-child').find('[data-animation]');
-          doAnimations($firstAnimatingElements);
-        });
-        BasicSlider.on('beforeChange', function (e, slick, currentSlide, nextSlide) {
-          var $animatingElements = $('.single-slider[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
-          doAnimations($animatingElements);
-        });
-        BasicSlider.slick({
-          autoplay: false,
-          autoplaySpeed: 10000,
-          dots: false,
-          fade: true,
-          arrows: true,
-          prevArrow: '<button type="button" class="slick-prev"><i class="ti-arrow-left"></i></button>',
-          nextArrow: '<button type="button" class="slick-next"><i class="ti-arrow-right"></i></button>',
-          responsive: [{
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-              }
-            },
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false
-              }
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false
-              }
+    const scrollObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                displayScrollElement(entry.target);
+                // Unobserve to trigger the animation only once per load
+                observer.unobserve(entry.target);
             }
-          ]
         });
+    }, observerOptions);
 
-        function doAnimations(elements) {
-          var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-          elements.each(function () {
-            var $this = $(this);
-            var $animationDelay = $this.data('delay');
-            var $animationType = 'animated ' + $this.data('animation');
-            $this.css({
-              'animation-delay': $animationDelay,
-              '-webkit-animation-delay': $animationDelay
-            });
-            $this.addClass($animationType).one(animationEndEvents, function () {
-              $this.removeClass($animationType);
-            });
-          });
-        }
-      }
-      mainSlider();
-
-
- // Brand Active
-    $('.brand-active').slick({
-      dots: false,
-      infinite: true,
-      autoplay: true,
-      speed: 400,
-      arrows: false,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: false,
-          }
-        },
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: false,
-          }
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
+    // Initialize observer for each target element
+    scrollElements.forEach(el => {
+        scrollObserver.observe(el);
     });
 
+    // --- 3. AJAX CONTACT FORM SUBMISSION ---
+    // Processes the enrollment inquiry form without refreshing the page.
+    const contactForm = document.getElementById('ajs-contact-form');
+    const formResponse = document.getElementById('form-response');
 
-/* 4. Testimonial Active*/
-  var testimonial = $('.h1-testimonial-active');
-      if(testimonial.length){
-      testimonial.slick({
-          dots: false,
-          infinite: true,
-          speed: 1000,
-          autoplay:false,
-          loop:true,
-          arrows: true,
-          prevArrow: '<button type="button" class="slick-prev"><i class="ti-angle-left"></i></button>',
-          nextArrow: '<button type="button" class="slick-next"><i class="ti-angle-right"></i></button>',
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: false,
-                arrow:false
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows:false
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows:false,
-              }
-            }
-          ]
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent standard page reload
+
+            // UI Feedback: Show loading state on the button
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+
+            // Gather all form data
+            const formData = new FormData(this);
+
+            // POST request to the PHP backend
+            fetch('contact/sendmail.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    formResponse.style.display = 'block';
+                    // Display success or error message from PHP
+                    if (data.status === 'success') {
+                        formResponse.innerHTML = `<div style="color: green; padding: 10px; border: 1px solid green; background: #e0ffe0; border-radius: 5px; margin-top: 15px;">${data.message}</div>`;
+                        contactForm.reset(); // Reset form on success
+                    } else {
+                        formResponse.innerHTML = `<div style="color: red; padding: 10px; border: 1px solid red; background: #ffe0e0; border-radius: 5px; margin-top: 15px;">${data.message}</div>`;
+                    }
+                })
+                .catch(error => {
+                    // Fallback for network errors
+                    console.error('Error:', error);
+                    formResponse.style.display = 'block';
+                    formResponse.innerHTML = `<div style="color: red; padding: 10px; border: 1px solid red; background: #ffe0e0; border-radius: 5px; margin-top: 15px;">An error occurred while sending. Please try again later.</div>`;
+                })
+                .finally(() => {
+                    // Revert button to original state
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.disabled = false;
+                });
         });
-      }
-
-
-/* 6. Nice Selectorp  */
-  var nice_Select = $('select');
-    if(nice_Select.length){
-      nice_Select.niceSelect();
     }
 
-/* 7. data-background */
-    $("[data-background]").each(function () {
-      $(this).css("background-image", "url(" + $(this).attr("data-background") + ")")
-      });
-
-
-/* 10. WOW active */
-    new WOW().init();
-
-
-    
-// 11. ---- Mailchimp js --------//  
-    function mailChimp() {
-      $('#mc_embed_signup').find('form').ajaxChimp();
-    }
-    mailChimp();
-
-
-
-// 12 Pop Up Img
-    var popUp = $('.single_gallery_part, .img-pop-up');
-      if(popUp.length){
-        popUp.magnificPopup({
-          type: 'image',
-          gallery:{
-            enabled:true
-          }
-        });
-      }
-
-/*13. magnificPopup video view */
-    $('.popup-video').magnificPopup({
-      type: 'iframe'
-    });
-
-
-
-/* 14. counterUp*/
-    $('.counter').counterUp({
-      delay: 10,
-      time: 3000
-    });
-
-
-
-})(jQuery);
+});

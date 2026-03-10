@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alphajuniorschool.co.zw/sitemap.xml
