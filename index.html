@@ -10,14 +10,21 @@
     <meta name="description"
         content="Alpha Junior School in Chivhu offers elite ECD to Grade 4 education. Discover our safe, nurturing environment and affordable, high-quality learning today.">
 
+    <!-- Canonical & Open Graph -->
+    <link rel="canonical" href="https://alphajuniorschool.co.zw/">
+    <meta property="og:title" content="Alpha Junior School | Quality ECD & Primary Education in Chivhu">
+    <meta property="og:description" content="Nurturing young minds from ECD to Grade 4 in Chivhu, Zimbabwe. Safe, English-speaking, ZIMSEC-aligned.">
+    <meta property="og:url" content="https://alphajuniorschool.co.zw/">
+    <meta property="og:type" content="website">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="assets/img/logo.jpg">
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="manifest" href="manifest.json">
 
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -33,7 +40,7 @@
       "name": "Alpha Junior School",
       "description": "Alpha Junior School in Chivhu provides high-quality preschool and primary education from ECD A to Grade 4.",
       "url": "https://alphajuniorschool.co.zw",
-      "logo": "https://alphajuniorschool.co.zw/assets/img/logo.jpg",
+      "logo": "https://alphajuniorschool.co.zw/assets/img/logo.png",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "18848 Cloete Street",
@@ -52,44 +59,44 @@
 
 <body>
 
-    <!-- Header Component -->
+    <!-- ===== HEADER ===== -->
     <header>
         <!-- Top Bar with Contact Info -->
         <div class="top-bar">
             <div class="container">
                 <div class="top-bar-info">
                     <span><i class="fas fa-envelope"></i> merggielonely@gmail.com</span>
-                    <span><i class="fas fa-clock"></i> Mon - Fri: 07:30 - 15:30</span>
+                    <span><i class="fas fa-clock"></i> Mon – Fri: 07:30 – 15:30</span>
                 </div>
                 <div class="top-bar-social">
-                    <span>Enrolling for New Term!</span>
-                    <a href="https://www.facebook.com/" target="_blank" aria-label="Follow us on Facebook"><i
-                            class="fab fa-facebook-f"></i></a>
+                    <span style="color: var(--grid-amber); font-weight: 600;">🎓 Enrolling Now – 2026 Term!</span>
+                    <a href="https://www.facebook.com/AlphaJuniorSchoolChivhu" target="_blank" rel="noopener" aria-label="Follow Alpha Junior School on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/263778376024" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
 
         <!-- Main Navigation Bar -->
-        <div class="header">
+        <div class="header" id="main-header">
             <div class="container nav-container">
-                <a href="index.html" class="logo">
-                    <img src="assets/img/logo.jpg" alt="Alpha Junior School Official Logo">
+                <a href="index.html" class="logo" aria-label="Alpha Junior School Home">
+                    <img src="assets/img/logo.png" alt="Alpha Junior School Official Logo">
                     <div class="logo-text">
                         <span>Alpha Junior</span>
                         <span>School</span>
                     </div>
                 </a>
 
-                <nav class="nav-links">
+                <nav class="nav-links" id="nav-links" aria-label="Primary Navigation">
                     <a href="index.html" class="active">Home</a>
                     <a href="about.html">About</a>
                     <a href="programs.html">Programs</a>
                     <a href="safety.html">Health & Safety</a>
                     <a href="contact.html">Contact</a>
-                    <a href="contact.html" class="btn btn-primary" style="color:white; margin-left:15px;">Enroll Now</a>
+                    <a href="contact.html" class="btn btn-primary" style="padding: 10px 24px;">Enroll Now</a>
                 </nav>
 
-                <button class="mobile-menu-btn" aria-label="Open mobile navigation menu">
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -97,223 +104,353 @@
     </header>
 
     <main>
-        <!-- SECTION 1: Hero Banner -->
-        <section class="hero" style="background-image: url('assets/img/hero-bg.jpg');">
-            <div class="hero-content animate-on-scroll fade-up">
-                <p class="hero-subtitle">Ex Fide Fiducia - From Faith, Confidence</p>
-                <!-- SEO Rule: Exactly ONE H1 tag per page -->
-                <h1 class="hero-title">Shaping Bright Futures in Chivhu Since Day One</h1>
-                <p style="font-size: 1.1rem; margin-bottom: 20px;">Providing quality ECD to Grade 4 education in a safe
-                    and godly environment founded on merit and integrity.</p>
-                <div class="hero-btns">
-                    <a href="about.html" class="btn btn-blue">Explore Our School</a>
-                    <a href="contact.html" class="btn btn-yellow">Apply for Admission</a>
+        <!-- ===== SECTION 1: HERO BANNER ===== -->
+        <section class="hero" style="background-image: url('assets/img/hero-bg.jpg');" aria-label="Hero Banner">
+            <div class="hero-inner">
+                <div class="container">
+                    <div class="hero-split">
+                        <!-- Left: Text Content -->
+                        <div class="hero-text">
+                            <div class="hero-badge">
+                                <i class="fas fa-star"></i>
+                                ZIMSEC Certified &bull; Chivhu, Zimbabwe
+                            </div>
+                            <!-- SEO Rule: Exactly ONE H1 tag per page -->
+                            <h1>Alpha Junior School – <span class="text-gradient" style="-webkit-text-fill-color: transparent; background: linear-gradient(90deg, #F59E0B, #FCD34D); background-clip: text; -webkit-background-clip: text;">Shaping Bright Futures</span></h1>
+                            <p>Providing quality ECD to Grade 4 education in a safe, English-speaking environment for children aged 18 months to 10 years in Chivhu.</p>
+                            <div class="hero-btns">
+                                <a href="contact.html" class="btn btn-primary"><i class="fas fa-user-plus"></i> Apply for Admission</a>
+                                <a href="about.html" class="btn btn-outline-white"><i class="fas fa-play-circle"></i> Explore Our School</a>
+                            </div>
+                        </div>
+
+                        <!-- Right: Glassmorphism Enrollment Card -->
+                        <div class="hero-card-wrap">
+                            <div class="glass-card">
+                                <span class="card-badge">Enrollment Open</span>
+                                <h3>2026 Academic Year</h3>
+                                <div class="stat-list">
+                                    <div class="stat-item">
+                                        <div style="width:32px;height:32px;background:rgba(255,255,255,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                            <i class="fas fa-baby" style="color:var(--grid-amber);font-size:0.85rem;"></i>
+                                        </div>
+                                        <span>ECD from 18 months old</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div style="width:32px;height:32px;background:rgba(255,255,255,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                            <i class="fas fa-graduation-cap" style="color:var(--grid-amber);font-size:0.85rem;"></i>
+                                        </div>
+                                        <span>ECD A&amp;B through Grade 4</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div style="width:32px;height:32px;background:rgba(255,255,255,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                            <i class="fas fa-bus" style="color:var(--grid-amber);font-size:0.85rem;"></i>
+                                        </div>
+                                        <span>Door-to-door transport</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div style="width:32px;height:32px;background:rgba(255,255,255,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                            <i class="fas fa-language" style="color:var(--grid-amber);font-size:0.85rem;"></i>
+                                        </div>
+                                        <span>English-speaking environment</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div style="width:32px;height:32px;background:rgba(255,255,255,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                            <i class="fas fa-laptop" style="color:var(--grid-amber);font-size:0.85rem;"></i>
+                                        </div>
+                                        <span>Computers, Taekwondo &amp; Swimming</span>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">
+                                    <i class="fas fa-envelope"></i> Contact Admissions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 2: Welcome & Overview -->
-        <section class="section-padding welcome-section">
-            <div class="container welcome-grid">
-                <article class="welcome-text animate-on-scroll fade-right">
-                    <div class="section-title" style="text-align: left;">
-                        <span>Your Child's Second Home</span>
-                        <h2>Nurturing Young Minds to Excellence</h2>
-                    </div>
-                    <p>Alpha Junior School is a premier educational institution in Chivhu, Zimbabwe. We are dedicated to
-                        providing a balanced curriculum that emphasizes academic prowess, spiritual growth, and physical
-                        development.</p>
-                    <p style="margin-top: 15px; margin-bottom: 30px;">Our school motto, "Ex Fide Fiducia," guides us in
-                        building a community where faith leads to confidence and success in every child’s learning
-                        journey.</p>
-                    <a href="about.html" class="btn btn-outline">Read More About Us</a>
-                </article>
-
-                <div class="welcome-images animate-on-scroll fade-left">
-                    <div class="welcome-img-card">
-                        <img src="assets/img/ece.jpg"
-                            alt="Toddlers playing and learning in the Early Childhood Development class">
-                        <span class="img-label">ECD Wing</span>
-                    </div>
-                    <div class="welcome-img-card">
-                        <img src="assets/img/sports.jpg"
-                            alt="Primary school children participating in outdoor sports activities">
-                        <span class="img-label">Athletics</span>
-                    </div>
-                    <div class="welcome-img-card">
-                        <img src="assets/img/primary.jpg"
-                            alt="Students studying in a modern and bright Grade 4 classroom">
-                        <span class="img-label">Grade 1-4</span>
-                    </div>
-                    <div class="welcome-img-card">
-                        <img src="assets/img/creative.jpg"
-                            alt="Students showcasing their paintings in our creative arts department">
-                        <span class="img-label">Creative Arts</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 3: Why Choose Us (Core Values) -->
-        <section class="section-padding">
+        <!-- ===== SECTION 2: WELCOME & OVERVIEW ===== -->
+        <section class="section-padding welcome-section" aria-label="Welcome to Alpha Junior School">
             <div class="container">
-                <div class="section-title">
-                    <span>Why Alpha Junior?</span>
+                <div class="split-grid">
+                    <!-- Text Column -->
+                    <article class="animate-on-scroll fade-right">
+                        <div class="section-title" style="text-align: left;">
+                            <span class="overline">Your Child's Second Home</span>
+                            <h2>Nurturing Young Minds to Excellence</h2>
+                        </div>
+                        <p>Alpha Junior School is a premier educational institution in Chivhu, Zimbabwe. We are dedicated to providing a balanced, ZIMSEC-aligned curriculum that emphasizes academic prowess, social development, and physical well-being.</p>
+                        <p style="margin-top: 16px; margin-bottom: 32px; color: var(--text-muted);">From our ECD wing for toddlers to our Grade 4 classrooms, every child receives personalized attention in a safe, English-speaking environment designed to build lifelong confidence.</p>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                            <a href="about.html" class="btn btn-outline">Read Our Story</a>
+                            <a href="programs.html" class="btn btn-red">View Programs</a>
+                        </div>
+                    </article>
+
+                    <!-- Photo Mosaic Column -->
+                    <div class="photo-mosaic animate-on-scroll fade-left">
+                        <div class="photo-card">
+                            <img src="assets/img/ece.jpg" alt="Toddlers playing and learning in the Early Childhood Development class at Alpha Junior School">
+                            <span class="img-label">ECD Wing</span>
+                        </div>
+                        <div class="photo-card">
+                            <img src="assets/img/sports.jpg" alt="Primary school children participating in outdoor sports activities">
+                            <span class="img-label">Athletics</span>
+                        </div>
+                        <div class="photo-card">
+                            <img src="assets/img/primary.jpg" alt="Students studying in a bright Grade 4 classroom at Alpha Junior School">
+                            <span class="img-label">Grade 1-4</span>
+                        </div>
+                        <div class="photo-card">
+                            <img src="assets/img/creative.jpg" alt="Students showcasing paintings in our creative arts department">
+                            <span class="img-label">Creative Arts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 3: BENTO BOX KEY SELLING POINTS ===== -->
+        <section class="section-padding" style="background: var(--bg-section);" aria-label="Why Choose Alpha Junior School">
+            <div class="container">
+                <div class="section-title animate-on-scroll fade-up">
+                    <span class="overline">Why Alpha Junior?</span>
                     <h2>Our Foundation of Excellence</h2>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
-                    <article class="animate-on-scroll fade-up"
-                        style="padding:30px; border-radius:10px; background:var(--bg-light); text-align:center;">
-                        <i class="fas fa-graduation-cap"
-                            style="font-size: 2.5rem; color: var(--grid-gold); margin-bottom: 20px;"></i>
-                        <h3>Quality Education</h3>
-                        <p>We provide a rigorous and comprehensive curriculum tailored to the modern world's demands.
-                        </p>
-                    </article>
-                    <article class="animate-on-scroll fade-up"
-                        style="padding:30px; border-radius:10px; background:var(--bg-light); text-align:center;">
-                        <i class="fas fa-user-shield"
-                            style="font-size: 2.5rem; color: var(--grid-cyan); margin-bottom: 20px;"></i>
-                        <h3>Safe & Secure</h3>
-                        <p>Our campus is a protected haven with 24/7 security, ensuring peace of mind for every parent.
-                        </p>
-                    </article>
-                    <article class="animate-on-scroll fade-up"
-                        style="padding:30px; border-radius:10px; background:var(--bg-light); text-align:center;">
-                        <i class="fas fa-hands-helping"
-                            style="font-size: 2.5rem; color: var(--primary-red); margin-bottom: 20px;"></i>
-                        <h3>Values-Based</h3>
-                        <p>We instill core values of integrity, merit, and spiritual awareness in every student we
-                            teach.</p>
-                    </article>
+                <!-- Bento Grid Layout -->
+                <div class="bento-grid animate-on-scroll fade-up">
+                    <!-- Featured tile: Transport (large) -->
+                    <div class="bento-item featured">
+                        <div class="bento-icon"><i class="fas fa-bus"></i></div>
+                        <h3>Door-to-Door Transport</h3>
+                        <p>Safe, reliable daily shuttle service across Chivhu. Our vetted drivers bring your child directly to your door.</p>
+                        <a href="safety.html" style="color: var(--grid-amber); font-weight: 700; font-size: 0.88rem; margin-top: 8px; display: inline-flex; align-items: center; gap: 6px;">Check Transport Routes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Regular tiles -->
+                    <div class="bento-item animate-on-scroll fade-up">
+                        <div class="bento-icon" style="background: rgba(250,204,21,0.12); color: #D97706;"><i class="fas fa-language"></i></div>
+                        <h3>English-Speaking</h3>
+                        <p>Full English-medium instruction builds reading, writing, and speaking confidence from early childhood.</p>
+                    </div>
+                    <div class="bento-item animate-on-scroll fade-up">
+                        <div class="bento-icon" style="background: rgba(16,185,129,0.12); color: #059669;"><i class="fas fa-book-open"></i></div>
+                        <h3>ZIMSEC Curriculum</h3>
+                        <p>Our structured curriculum fully aligns with Zimbabwe national standards, preparing learners for examinations.</p>
+                    </div>
+                    <div class="bento-item animate-on-scroll fade-up">
+                        <div class="bento-icon" style="background: rgba(79,70,229,0.12); color: var(--accent-indigo);"><i class="fas fa-users"></i></div>
+                        <h3>Small Class Sizes</h3>
+                        <p>Low student-to-teacher ratios guarantee that every child receives personal attention and guidance.</p>
+                    </div>
+                    <div class="bento-item animate-on-scroll fade-up">
+                        <div class="bento-icon" style="background: rgba(200,16,46,0.12); color: var(--primary-red);"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Safe & Secure Campus</h3>
+                        <p>A fully supervised, hygienic, and physically secure environment with trained safety staff on site.</p>
+                    </div>
+                    <div class="bento-item animate-on-scroll fade-up">
+                        <div class="bento-icon" style="background: rgba(6,182,212,0.12); color: #0891B2;"><i class="fas fa-running"></i></div>
+                        <h3>Extracurricular Activities</h3>
+                        <p>Computers, Taekwondo, Swimming, and Tennis for holistic physical and digital skills development.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 4: Colorful Programs Grid -->
-        <section class="programs-grid">
-            <div class="grid-item bg-red animate-on-scroll fade-up">
-                <i class="fas fa-shapes" style="font-size: 3rem; margin-bottom: 20px;"></i>
-                <h3>ECD Foundation</h3>
-                <p>Play-based learning for ECD A & B learners in Chivhu.</p>
-                <a href="programs.html" class="btn btn-outline"
-                    style="border-color: white; color: white; margin-top: auto;">Explore</a>
+        <!-- ===== SECTION 4: PROGRAMS MOSAIC GRID ===== -->
+        <section aria-label="Academic Programs Overview" style="overflow: hidden;">
+            <div class="section-title animate-on-scroll fade-up" style="padding-top: var(--space-10);">
+                <span class="overline">From Playgroup to Grade 4</span>
+                <h2>Explore Our Academic Journey</h2>
             </div>
-
-            <div class="grid-item grid-img animate-on-scroll fade-up"
-                style="background-image: url('assets/img/grid-1.jpg');">
-                <div
-                    style="background: rgba(0,0,0,0.5); width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column;">
-                    <h3 style="margin:0;">Lower Primary</h3>
-                    <span style="font-weight:600; margin-top:5px;">Grade 1 - 3 Curriculum</span>
+            <div class="programs-mosaic">
+                <div class="mosaic-item mosaic-bg-img" style="background-image: url('assets/img/ece.jpg');">
+                    <div class="mi-overlay"></div>
+                    <div class="mi-content">
+                        <div class="mi-icon"><i class="fas fa-child"></i></div>
+                        <h3>Early Learning (18 mo+)</h3>
+                        <p>Play-based learning, language & motor skills.</p>
+                        <a href="programs.html" class="mi-link"><i class="fas fa-arrow-right"></i> Explore</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="grid-item bg-gold animate-on-scroll fade-up">
-                <i class="fas fa-book-open" style="font-size: 3rem; margin-bottom: 20px;"></i>
-                <h3>Grade 4 Plus</h3>
-                <p>Intensive exam preparation and advanced core subject focus.</p>
-                <a href="programs.html" class="btn"
-                    style="background:var(--primary-black); color:white; margin-top:auto;">See Details</a>
-            </div>
-
-            <div class="grid-item grid-img animate-on-scroll fade-up"
-                style="background-image: url('assets/img/grid-2.jpg');">
-                <div
-                    style="background: rgba(0,0,0,0.5); width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column;">
-                    <h3 style="margin:0;">Secure Campus</h3>
-                    <span style="font-weight:600; margin-top:5px;">Protected 24/7</span>
+                <div class="mosaic-item mi-bg-indigo">
+                    <div class="mi-overlay"></div>
+                    <div class="mi-content">
+                        <div class="mi-icon"><i class="fas fa-shapes"></i></div>
+                        <h3>ECD A & B</h3>
+                        <p>Literacy, numeracy, storytelling, creative play & music.</p>
+                        <a href="programs.html" class="mi-link"><i class="fas fa-arrow-right"></i> Explore</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="grid-item grid-img animate-on-scroll fade-up"
-                style="background-image: url('assets/img/grid-3.jpg');">
-                <div
-                    style="background: rgba(0,0,0,0.5); width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column;">
-                    <h3 style="margin:0;">Sports & Skills</h3>
-                    <span style="font-weight:600; margin-top:5px;">Winning Athletics</span>
+                <div class="mosaic-item mosaic-bg-img" style="background-image: url('assets/img/primary.jpg');">
+                    <div class="mi-overlay"></div>
+                    <div class="mi-content">
+                        <div class="mi-icon"><i class="fas fa-book"></i></div>
+                        <h3>Grade 1 – 4</h3>
+                        <p>English, Maths, Environmental Studies & teamwork.</p>
+                        <a href="programs.html" class="mi-link"><i class="fas fa-arrow-right"></i> Explore</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="grid-item bg-purple animate-on-scroll fade-up">
-                <i class="fas fa-bus" style="font-size: 3rem; margin-bottom: 20px;"></i>
-                <h3>Safe Transport</h3>
-                <p>Daily door-to-door shuttle service across Chivhu region.</p>
-                <a href="safety.html" class="btn"
-                    style="background:white; color:var(--grid-purple); margin-top:auto;">Check Routes</a>
-            </div>
-
-            <div class="grid-item grid-img animate-on-scroll fade-up"
-                style="background-image: url('assets/img/grid-4.jpg');">
-                <div
-                    style="background: rgba(0,0,0,0.5); width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column;">
-                    <h3 style="margin:0;">Medical Care</h3>
-                    <span style="font-weight:600; margin-top:5px;">First Aid Trained Staff</span>
+                <div class="mosaic-item mi-bg-amber">
+                    <div class="mi-overlay"></div>
+                    <div class="mi-content">
+                        <div class="mi-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Digital Skills</h3>
+                        <p>Computer literacy from Grade 1, building digital foundations.</p>
+                        <a href="programs.html" class="mi-link"><i class="fas fa-arrow-right"></i> Explore</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="grid-item bg-cyan animate-on-scroll fade-up">
-                <i class="fas fa-users" style="font-size: 3rem; margin-bottom: 20px;"></i>
-                <h3>Small Classes</h3>
-                <p>Individual attention guaranteed with our low student-teacher ratio.</p>
-                <a href="about.html" class="btn" style="background:white; color:var(--grid-cyan); margin-top:auto;">Meet
-                    Staff</a>
+                <div class="mosaic-item mosaic-bg-img" style="background-image: url('assets/img/sports.jpg');">
+                    <div class="mi-overlay"></div>
+                    <div class="mi-content">
+                        <div class="mi-icon"><i class="fas fa-running"></i></div>
+                        <h3>Sports & Athletics</h3>
+                        <p>Taekwondo, Swimming, Tennis & team sports.</p>
+                        <a href="programs.html" class="mi-link"><i class="fas fa-arrow-right"></i> Explore</a>
+                    </div>
+                </div>
+
+                <div class="mosaic-item mi-bg-teal">
+                    <div class="mi-overlay"></div>
+                    <div class="mi-content">
+                        <div class="mi-icon"><i class="fas fa-palette"></i></div>
+                        <h3>Creative Arts</h3>
+                        <p>Music, dance, visual arts & storytelling for holistic growth.</p>
+                        <a href="programs.html" class="mi-link"><i class="fas fa-arrow-right"></i> Explore</a>
+                    </div>
+                </div>
+
+                <div class="mosaic-item mi-bg-red">
+                    <div class="mi-overlay"></div>
+                    <div class="mi-content">
+                        <div class="mi-icon"><i class="fas fa-bus-alt"></i></div>
+                        <h3>Safe Transport</h3>
+                        <p>Daily door-to-door shuttles across Chivhu.</p>
+                        <a href="safety.html" class="mi-link"><i class="fas fa-arrow-right"></i> Learn More</a>
+                    </div>
+                </div>
+
+                <div class="mosaic-item mosaic-bg-img" style="background-image: url('assets/img/grid-4.jpg');">
+                    <div class="mi-overlay"></div>
+                    <div class="mi-content">
+                        <div class="mi-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Health & Safety</h3>
+                        <p>Hygienic meals, borehole water & trained safety staff.</p>
+                        <a href="safety.html" class="mi-link"><i class="fas fa-arrow-right"></i> Learn More</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- SECTION 5: Call to Action / Admission Banner -->
-        <section class="section-padding" style="background: var(--primary-black); color: white; text-align: center;">
+        <!-- ===== SECTION 5: HOME GALLERY SNIPPET ===== -->
+        <section class="section-padding" aria-label="School Activity Gallery">
+            <div class="container">
+                <div class="section-title animate-on-scroll fade-up">
+                    <span class="overline">Life at Alpha Junior</span>
+                    <h2>A Glimpse Into Our World</h2>
+                </div>
+                <div class="gallery-scroll-wrap animate-on-scroll fade-up">
+                    <div class="gallery-card grainy-overlay">
+                        <img src="assets/img/ece.jpg" alt="ECD students engaged in play-based learning activities">
+                        <div class="overlay"></div>
+                        <span class="caption">ECD Learning</span>
+                    </div>
+                    <div class="gallery-card grainy-overlay">
+                        <img src="assets/img/sports.jpg" alt="Students participating in outdoor sports day at Alpha Junior School">
+                        <div class="overlay"></div>
+                        <span class="caption">Sports Day</span>
+                    </div>
+                    <div class="gallery-card grainy-overlay">
+                        <img src="assets/img/primary.jpg" alt="Grade 4 students in a modern, bright classroom">
+                        <div class="overlay"></div>
+                        <span class="caption">Primary Classes</span>
+                    </div>
+                    <div class="gallery-card grainy-overlay">
+                        <img src="assets/img/creative.jpg" alt="Students displaying creative artwork at the school art exhibition">
+                        <div class="overlay"></div>
+                        <span class="caption">Creative Arts</span>
+                    </div>
+                    <div class="gallery-card grainy-overlay">
+                        <img src="assets/img/grid-1.jpg" alt="Alpha Junior School campus and facilities">
+                        <div class="overlay"></div>
+                        <span class="caption">Our Campus</span>
+                    </div>
+                    <div class="gallery-card grainy-overlay">
+                        <img src="assets/img/grid-3.jpg" alt="School transport vehicle ready for student pickup">
+                        <div class="overlay"></div>
+                        <span class="caption">School Transport</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 6: CALL TO ACTION ===== -->
+        <section class="cta-banner" aria-label="Enrollment Call to Action">
             <div class="container animate-on-scroll fade-up">
-                <h2 style="color: white; margin-bottom: 20px;">Ready to Enroll Your Child?</h2>
-                <p style="max-width: 600px; margin: 0 auto 30px; color: #b0b0b0;">Join the Alpha Junior School family
-                    today and give your child the foundation they deserve. Applications for the next term are now open!
-                </p>
-                <a href="contact.html" class="btn btn-primary">Download Admission Form</a>
-                <p style="margin-top: 20px; font-weight: 500;">Or Call Us: <a href="tel:+263778376024"
-                        style="color: var(--grid-gold);">+263 77 837 6024</a></p>
+                <h2>Ready to Enroll Your Child?</h2>
+                <p>Join the Alpha Junior School family today and give your child the foundation they deserve. Applications for the 2026 academic term are now open!</p>
+                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-primary"><i class="fas fa-user-plus"></i> Apply for Admission</a>
+                    <a href="tel:+263778376024" class="btn btn-outline-white"><i class="fas fa-phone"></i> Call: +263 77 837 6024</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer Component -->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
+                <!-- Brand Column -->
                 <div class="footer-col">
-                    <img src="assets/img/logo.jpg" alt="Alpha Junior School Small Logo"
-                        style="width: 80px; margin-bottom: 20px; border-radius: 5px;">
-                    <p style="color: #b0b0b0;">Ex Fide Fiducia. Alpha Junior School is dedicated to nurturing excellence
-                        through faith and hard work in Chivhu, Zimbabwe.</p>
+                    <img src="assets/img/logo.png" alt="Alpha Junior School Small Logo" style="width: 72px; margin-bottom: 16px; border-radius: 8px;">
+                    <p>Alpha Junior School is dedicated to nurturing excellence in every child from ECD through Grade 4 in Chivhu, Zimbabwe.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/AlphaJuniorSchoolChivhu" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/263778376024" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
                 </div>
 
+                <!-- Navigation Column -->
                 <nav class="footer-col" aria-label="Footer Navigation">
                     <h4>Navigation</h4>
                     <ul>
                         <li><a href="index.html">Home Page</a></li>
                         <li><a href="about.html">About Alpha Junior</a></li>
                         <li><a href="programs.html">Academic Programs</a></li>
-                        <li><a href="safety.html">Health & Transport</a></li>
+                        <li><a href="safety.html">Health &amp; Transport</a></li>
                         <li><a href="contact.html">Apply for Admission</a></li>
                     </ul>
                 </nav>
 
+                <!-- Contact Column -->
                 <div class="footer-col">
                     <h4>Contact Details</h4>
-                    <ul style="color: #b0b0b0;">
-                        <li><i class="fas fa-map-marker-alt" style="color:var(--grid-gold); margin-right:5px;"></i>
-                            18848 Cloete Street, Chivhu</li>
-                        <li><i class="fas fa-phone" style="color:var(--grid-gold); margin-right:5px;"></i> +263 77 837
-                            6024</li>
-                        <li><i class="fas fa-envelope" style="color:var(--grid-gold); margin-right:5px;"></i>
-                            merggielonely@gmail.com</li>
+                    <ul>
+                        <li style="color:rgba(255,255,255,0.6); font-size:0.9rem; margin-bottom:10px;">
+                            <i class="fas fa-map-marker-alt" style="color:var(--grid-amber); margin-right:8px;"></i>
+                            18848 Cloete Street, Chivhu
+                        </li>
+                        <li style="color:rgba(255,255,255,0.6); font-size:0.9rem; margin-bottom:10px;">
+                            <i class="fas fa-phone" style="color:var(--grid-amber); margin-right:8px;"></i>
+                            <a href="tel:+263778376024" style="color:rgba(255,255,255,0.6);">+263 77 837 6024</a>
+                        </li>
+                        <li style="color:rgba(255,255,255,0.6); font-size:0.9rem;">
+                            <i class="fas fa-envelope" style="color:var(--grid-amber); margin-right:8px;"></i>
+                            <a href="mailto:merggielonely@gmail.com" style="color:rgba(255,255,255,0.6);">merggielonely@gmail.com</a>
+                        </li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Attribution SEO Requirement -->
+            <!-- Attribution -->
             <div class="footer-bottom">
-                <p>&copy; 2026 Alpha Junior School. Designed by <a href="https://devstudio.co.zw" target="_blank"
-                        rel="nofollow">devstudio.co.zw</a></p>
+                <p>&copy; 2026 Alpha Junior School, Chivhu. Designed by <a href="https://devstudio.co.zw" target="_blank" rel="nofollow">devstudio.co.zw</a></p>
             </div>
         </div>
     </footer>

@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO Rule: Title between 50-60 characters -->
-    <title>Contact Us | Alpha Junior School Admissions in Chivhu</title>
+    <title>Contact & Admissions | Alpha Junior School Chivhu</title>
     <!-- SEO Rule: Meta Description between 150-160 characters -->
     <meta name="description"
-        content="Get in touch with Alpha Junior School. Contact our admissions office for Grade 1-4 enrollment inquiries. We are located at 18848 Cloete Street, Chivhu.">
+        content="Contact Alpha Junior School Chivhu for ECD to Grade 4 admissions. Call +263 77 837 6024 or visit 18848 Cloete Street. Applications for 2026 now open.">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="assets/img/logo.jpg">
+    <link rel="canonical" href="https://alphajuniorschool.co.zw/contact.html">
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="manifest" href="manifest.json">
 
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
-    <!-- FontAwesome for Icons -->
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Custom Stylesheet -->
@@ -34,6 +34,7 @@
         "@type": "EducationalOrganization",
         "name": "Alpha Junior School",
         "telephone": "+263778376024",
+        "email": "merggielonely@gmail.com",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "18848 Cloete Street",
@@ -47,7 +48,7 @@
 
 <body>
 
-    <!-- Header Component -->
+    <!-- ===== HEADER ===== -->
     <header>
         <div class="top-bar">
             <div class="container">
@@ -55,29 +56,34 @@
                     <span><i class="fas fa-envelope"></i> merggielonely@gmail.com</span>
                     <span><i class="fas fa-phone"></i> +263 77 837 6024</span>
                 </div>
+                <div class="top-bar-social">
+                    <span style="color: var(--grid-amber); font-weight: 600;">🎓 Enrolling Now – 2026!</span>
+                    <a href="https://www.facebook.com/AlphaJuniorSchoolChivhu" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/263778376024" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
         </div>
 
-        <div class="header">
+        <div class="header" id="main-header">
             <div class="container nav-container">
-                <a href="index.html" class="logo">
-                    <img src="assets/img/logo.jpg" alt="Alpha Junior School Logo">
+                <a href="index.html" class="logo" aria-label="Alpha Junior School Home">
+                    <img src="assets/img/logo.png" alt="Alpha Junior School Logo">
                     <div class="logo-text">
                         <span>Alpha Junior</span>
                         <span>School</span>
                     </div>
                 </a>
 
-                <nav class="nav-links">
+                <nav class="nav-links" id="nav-links" aria-label="Primary Navigation">
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="programs.html">Programs</a>
                     <a href="safety.html">Health & Safety</a>
                     <a href="contact.html" class="active">Contact</a>
-                    <a href="contact.html" class="btn btn-primary" style="color:white; margin-left:15px;">Enroll Now</a>
+                    <a href="contact.html" class="btn btn-primary" style="padding: 10px 24px;">Enroll Now</a>
                 </nav>
 
-                <button class="mobile-menu-btn" aria-label="Open navigation menu">
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -85,152 +91,270 @@
     </header>
 
     <main>
-        <!-- SECTION 1: Inner Hero -->
-        <section class="hero" style="background-image: url('assets/img/hero-bg.jpg'); height: 35vh; min-height: 300px;">
-            <div class="hero-content animate-on-scroll fade-up">
-                <h1 class="hero-title">Contact Our Admissions Team</h1>
-            </div>
-        </section>
-
-        <!-- SECTION 2: Contact Details -->
-        <section class="section-padding">
-            <div class="container"
-                style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:50px;">
-                <article class="animate-on-scroll fade-right">
-                    <div class="section-title" style="text-align: left;">
-                        <span>Get In Touch</span>
-                        <h2>Contact Information</h2>
+        <!-- ===== SECTION 1: INNER PAGE HERO ===== -->
+        <section class="hero hero-inner-page" style="background-image: url('assets/img/hero-bg.jpg'); min-height: 38vh;" aria-label="Contact Page Hero">
+            <div class="hero-inner">
+                <div class="container">
+                    <div class="hero-text animate-on-scroll fade-up">
+                        <div class="hero-badge"><i class="fas fa-envelope"></i> Admissions &amp; Inquiries</div>
+                        <!-- SEO Rule: Exactly ONE H1 tag per page -->
+                        <h1>Contact Our Admissions Team</h1>
+                        <p style="max-width: 500px;">Have a question or ready to enroll? Reach out and we'll guide you through every step of the admission process.</p>
                     </div>
-                    <ul style="margin-top:30px;">
-                        <li style="display:flex; gap:15px; margin-bottom:25px;">
-                            <div
-                                style="width:50px; height:50px; background:var(--primary-red); color:white; display:flex; align-items:center; justify-content:center; border-radius:10px; flex-shrink:0;">
-                                <i class="fas fa-map-marker-alt" style="width:auto;"></i>
-                            </div>
-                            <div>
-                                <h4 style="margin:0;">Physical Address</h4>
-                                <p style="color:var(--text-muted);">18848 Cloete Street, Chivhu, Zimbabwe</p>
-                            </div>
-                        </li>
-                        <li style="display:flex; gap:15px; margin-bottom:25px;">
-                            <div
-                                style="width:50px; height:50px; background:var(--grid-gold); color:white; display:flex; align-items:center; justify-content:center; border-radius:10px; flex-shrink:0;">
-                                <i class="fas fa-phone" style="width:auto;"></i>
-                            </div>
-                            <div>
-                                <h4 style="margin:0;">Phone Number</h4>
-                                <p style="color:var(--text-muted);">+263 77 837 6024</p>
-                            </div>
-                        </li>
-                        <li style="display:flex; gap:15px;">
-                            <div
-                                style="width:50px; height:50px; background:var(--grid-cyan); color:white; display:flex; align-items:center; justify-content:center; border-radius:10px; flex-shrink:0;">
-                                <i class="fas fa-envelope" style="width:auto;"></i>
-                            </div>
-                            <div>
-                                <h4 style="margin:0;">Email Address</h4>
-                                <p style="color:var(--text-muted);">merggielonely@gmail.com</p>
-                            </div>
-                        </li>
-                    </ul>
-                </article>
-
-                <!-- SECTION 3: The Contact Form -->
-                <article class="animate-on-scroll fade-left"
-                    style="background:var(--bg-light); padding:40px; border-radius:15px; box-shadow:var(--shadow-sm);">
-                    <h2 style="margin-bottom:25px;">Enrollment Inquiry</h2>
-                    <form id="ajs-contact-form">
-                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px; margin-bottom:15px;">
-                            <input type="text" name="parent_name" placeholder="Parent/Guardian Name" required
-                                style="width:100%; padding:12px; border:1px solid #ddd; border-radius:5px;">
-                            <input type="tel" name="phone" placeholder="Phone Number" required
-                                style="width:100%; padding:12px; border:1px solid #ddd; border-radius:5px;">
-                        </div>
-                        <div style="margin-bottom:15px;">
-                            <input type="email" name="email" placeholder="Email Address" required
-                                style="width:100%; padding:12px; border:1px solid #ddd; border-radius:5px;">
-                        </div>
-                        <div style="margin-bottom:15px;">
-                            <input type="number" name="child_age" placeholder="Child's Age"
-                                style="width:100%; padding:12px; border:1px solid #ddd; border-radius:5px;">
-                        </div>
-                        <div style="margin-bottom:20px;">
-                            <textarea name="message" placeholder="Your Inquiry or Message" required rows="5"
-                                style="width:100%; padding:12px; border:1px solid #ddd; border-radius:5px;"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width:100%;">Send Inquiry Now</button>
-                        <div id="form-response" style="margin-top:20px;"></div>
-                    </form>
-                </article>
+                </div>
             </div>
         </section>
 
-        <!-- SECTION 4: Operating Hours -->
-        <section class="section-padding" style="background:var(--primary-black); color:white; text-align:center;">
+        <!-- ===== SECTION 2: CONTACT DETAILS + FORM ===== -->
+        <section class="section-padding" aria-label="Contact Information and Form">
+            <div class="container">
+                <div class="split-grid" style="align-items: flex-start; gap: 40px;">
+                    <!-- Left: Contact Info Card -->
+                    <div class="animate-on-scroll fade-right">
+                        <div class="contact-info-card">
+                            <h2>Get in Touch</h2>
+                            <p class="sub">We're here to help. Reach us through any of the following channels and we'll respond promptly.</p>
+
+                            <div class="contact-detail-item">
+                                <div class="cdi-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h4>Physical Address</h4>
+                                    <p>18848 Cloete Street, Chivhu, Zimbabwe</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="cdi-icon"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <h4>Phone Number</h4>
+                                    <p><a href="tel:+263778376024" style="color:white;">+263 77 837 6024</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="cdi-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email Address</h4>
+                                    <p><a href="mailto:merggielonely@gmail.com" style="color:white;">merggielonely@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="cdi-icon"><i class="fas fa-clock"></i></div>
+                                <div>
+                                    <h4>Office Hours</h4>
+                                    <p>Mon–Fri: 07:30 – 15:30 | Sat: 09:00 – 12:00</p>
+                                </div>
+                            </div>
+
+                            <!-- Admissions Steps -->
+                            <div style="margin-top: 32px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.1);">
+                                <h3 style="color: white; margin-bottom: 4px; font-size: 1.05rem;">Admissions Process</h3>
+                                <p style="color: rgba(255,255,255,0.55); font-size: 0.85rem; margin-bottom: 20px;">Simple steps to enroll your child:</p>
+                                <div class="steps-list">
+                                    <div class="step-item">
+                                        <div class="step-number">1</div>
+                                        <div>
+                                            <h4 style="color:white;">Contact the School</h4>
+                                            <p>Call, email, or fill in the inquiry form to express interest.</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-item">
+                                        <div class="step-number">2</div>
+                                        <div>
+                                            <h4 style="color:white;">Visit the Campus</h4>
+                                            <p>Schedule a guided school tour with our admissions officer.</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-item">
+                                        <div class="step-number">3</div>
+                                        <div>
+                                            <h4 style="color:white;">Complete Admission Form</h4>
+                                            <p>Submit the form with your child's birth certificate and parent contacts.</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-item">
+                                        <div class="step-number">4</div>
+                                        <div>
+                                            <h4 style="color:white;">Confirm Enrollment</h4>
+                                            <p>Receive confirmation and prepare your child for their exciting new school journey!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Enrollment Inquiry Form (Floating Labels) -->
+                    <article class="animate-on-scroll fade-left" style="background: var(--bg-light); padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                        <h2 style="margin-bottom: 8px;">Enrollment Inquiry</h2>
+                        <p style="color: var(--text-muted); margin-bottom: 32px; font-size: 0.92rem;">Fill in the form below and we will get back to you within 24 hours.</p>
+
+                        <form id="ajs-contact-form" novalidate>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                                <div class="form-group">
+                                    <input type="text" id="parent_name" name="parent_name" placeholder=" " required autocomplete="name">
+                                    <label for="parent_name">Parent / Guardian Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="phone" name="phone" placeholder=" " required autocomplete="tel">
+                                    <label for="phone">Phone Number</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder=" " required autocomplete="email">
+                                <label for="email">Email Address</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="child_age" name="child_age" placeholder=" " min="1" max="12">
+                                <label for="child_age">Child's Age (Years)</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="program" name="program">
+                                    <option value="" disabled selected></option>
+                                    <option value="early-learning">Early Learning (18 months – 3 yrs)</option>
+                                    <option value="ecd-a">ECD A (Ages 3–4)</option>
+                                    <option value="ecd-b">ECD B (Ages 4–6)</option>
+                                    <option value="grade-1">Grade 1</option>
+                                    <option value="grade-2">Grade 2</option>
+                                    <option value="grade-3">Grade 3</option>
+                                    <option value="grade-4">Grade 4</option>
+                                </select>
+                                <label for="program">Program of Interest</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder=" " required rows="4"></textarea>
+                                <label for="message">Your Message or Inquiry</label>
+                            </div>
+                            <button type="submit" id="submit-btn" class="btn btn-primary" style="width:100%; justify-content:center;">
+                                <i class="fas fa-paper-plane"></i> Send Inquiry Now
+                            </button>
+                            <div id="form-response" style="margin-top: 16px; padding: 12px; border-radius: var(--radius-sm); display: none;"></div>
+                        </form>
+
+                        <!-- Requirements -->
+                        <div style="margin-top: 24px; padding: 16px; background: var(--pure-white); border-radius: var(--radius-sm); border-left: 3px solid var(--accent-indigo);">
+                            <h4 style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fas fa-clipboard-list" style="color: var(--accent-indigo); margin-right: 8px;"></i>Documents Required</h4>
+                            <ul style="font-size: 0.82rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+                                <li><i class="fas fa-check" style="color: var(--grid-green); margin-right: 6px;"></i>Child's birth certificate</li>
+                                <li><i class="fas fa-check" style="color: var(--grid-green); margin-right: 6px;"></i>Parent/guardian contact details</li>
+                                <li><i class="fas fa-check" style="color: var(--grid-green); margin-right: 6px;"></i>Previous school report (if applicable)</li>
+                                <li><i class="fas fa-check" style="color: var(--grid-green); margin-right: 6px;"></i>Completed admission form</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 3: OPERATING HOURS ===== -->
+        <section class="section-padding" style="background: var(--bg-section);" aria-label="Office Operating Hours">
+            <div class="container">
+                <div class="section-title animate-on-scroll fade-up">
+                    <span class="overline">When We're Open</span>
+                    <h2>Office Operating Hours</h2>
+                </div>
+                <div style="max-width: 480px; margin: 0 auto;" class="animate-on-scroll fade-up">
+                    <div style="background: var(--pure-white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); border: var(--card-border);">
+                        <div style="display: flex; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid var(--border-color);">
+                            <span style="font-weight: 600;"><i class="fas fa-calendar-check" style="color: var(--grid-green); margin-right: 10px;"></i>Monday – Friday</span>
+                            <span style="font-weight: 700; color: var(--accent-indigo);">07:30 – 15:30</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid var(--border-color);">
+                            <span style="font-weight: 600;"><i class="fas fa-calendar" style="color: var(--grid-amber); margin-right: 10px;"></i>Saturday</span>
+                            <span style="font-weight: 700; color: var(--grid-amber);">09:00 – 12:00</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 16px 24px;">
+                            <span style="font-weight: 600;"><i class="fas fa-calendar-times" style="color: var(--primary-red); margin-right: 10px;"></i>Sunday</span>
+                            <span style="font-weight: 700; color: var(--primary-red);">Closed</span>
+                        </div>
+                    </div>
+                    <p style="text-align: center; margin-top: 16px; font-size: 0.85rem; color: var(--text-muted);">For urgent enquiries outside of office hours, send a WhatsApp message and we'll reply on the next working day.</p>
+                    <div style="text-align: center; margin-top: 16px;">
+                        <a href="https://wa.me/263778376024" class="btn btn-primary" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Message on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 4: GOOGLE MAP ===== -->
+        <section class="section-padding" aria-label="School Location Map">
             <div class="container animate-on-scroll fade-up">
-                <i class="fas fa-clock" style="font-size:3rem; color:var(--grid-gold); margin-bottom:20px;"></i>
-                <h2 style="color:white; margin-bottom:15px;">Office Operating Hours</h2>
-                <div
-                    style="max-width:400px; margin: 0 auto; display:flex; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,0.1); padding:10px 0;">
-                    <span>Monday - Friday:</span>
-                    <span>07:30 AM - 15:30 PM</span>
+                <div class="section-title">
+                    <span class="overline">Find Us</span>
+                    <h2>Visit Our Campus</h2>
                 </div>
-                <div
-                    style="max-width:400px; margin: 0 auto; display:flex; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,0.1); padding:10px 0;">
-                    <span>Saturday:</span>
-                    <span>09:00 AM - 12:00 PM</span>
+                <p style="text-align: center; max-width: 560px; margin: -20px auto 32px; color: var(--text-muted);">
+                    Located in the heart of Chivhu at 18848 Cloete Street. Our campus is easily accessible from all major local routes.
+                </p>
+                <!-- Google Map Embed -->
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.453241693441!2d31.006432!3d-19.023448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1932c3842de47f97%3A0x96d8e1d8b6042f5!2sChivhu%2C%20Zimbabwe!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Alpha Junior School Location on Google Maps - 18848 Cloete Street, Chivhu, Zimbabwe">
+                    </iframe>
                 </div>
-                <div
-                    style="max-width:400px; margin: 0 auto; display:flex; justify-content:space-between; padding:10px 0; color:var(--primary-red); font-weight:600;">
-                    <span>Sunday:</span>
-                    <span>Closed</span>
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="https://www.google.com/maps/search/18848+Cloete+Street+Chivhu+Zimbabwe" target="_blank" class="btn btn-outline" rel="noopener"><i class="fas fa-map-marked-alt"></i> Open in Google Maps</a>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 5: Location / Instructions -->
-        <section class="section-padding">
-            <div class="container text-center animate-on-scroll fade-up">
-                <h2>Visit Our Campus</h2>
-                <p style="color:var(--text-muted); margin-bottom:30px;">Located in the heart of Chivhu, our campus is
-                    easily accessible from all major local routes.</p>
-                <div
-                    style="width:100%; height:400px; background: #eee; border-radius:10px; display:flex; align-items:center; justify-content:center; flex-direction:column;">
-                    <i class="fas fa-map-marked-alt" style="font-size:4rem; color:#ccc; margin-bottom:20px;"></i>
-                    <p style="color:#999;">Interactive Map Placeholder</p>
-                    <a href="https://www.google.com/maps" target="_blank" class="btn btn-outline"
-                        style="margin-top:20px;">Open in Google Maps</a>
+        <!-- ===== SECTION 5: FINAL CTA ===== -->
+        <section class="cta-banner" aria-label="Final Enrollment CTA">
+            <div class="container animate-on-scroll fade-up">
+                <h2>Your Child's Journey Starts Here</h2>
+                <p>Don't wait — spaces are limited for each intake. Apply now and secure your child's spot at Alpha Junior School for the 2026 academic year.</p>
+                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                    <a href="#ajs-contact-form" class="btn btn-primary"><i class="fas fa-user-plus"></i> Apply for Admission</a>
+                    <a href="tel:+263778376024" class="btn btn-outline-white"><i class="fas fa-phone"></i> +263 77 837 6024</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer Component -->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="assets/img/logo.jpg" alt="AJS Logo"
-                        style="width: 80px; margin-bottom: 20px; border-radius: 5px;">
-                    <p style="color: #b0b0b0;">Merit. Integrity. Faith. Alpha Junior School Chivhu.</p>
+                    <img src="assets/img/logo.png" alt="AJS Logo" style="width: 72px; margin-bottom: 16px; border-radius: 8px;">
+                    <p>Merit. Excellence. Care. Alpha Junior School Chivhu — Nurturing our community's brightest futures.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/AlphaJuniorSchoolChivhu" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/263778376024" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
                 </div>
                 <nav class="footer-col" aria-label="Footer Site Links">
                     <h4>Internal Links</h4>
                     <ul>
                         <li><a href="index.html">Main Home</a></li>
-                        <li><a href="about.html">Our Identity</a></li>
-                        <li><a href="programs.html">Study Levels</a></li>
-                        <li><a href="safety.html">Safety Board</a></li>
+                        <li><a href="about.html">About Alpha Junior</a></li>
+                        <li><a href="programs.html">Academic Programs</a></li>
+                        <li><a href="safety.html">Health &amp; Safety</a></li>
                         <li><a href="contact.html">Get in Touch</a></li>
                     </ul>
                 </nav>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li style="color:rgba(255,255,255,0.6); font-size:0.9rem; margin-bottom:10px;"><i class="fas fa-map-marker-alt" style="color:var(--grid-amber); margin-right:8px;"></i>18848 Cloete Street, Chivhu</li>
+                        <li style="color:rgba(255,255,255,0.6); font-size:0.9rem; margin-bottom:10px;"><i class="fas fa-phone" style="color:var(--grid-amber); margin-right:8px;"></i><a href="tel:+263778376024" style="color:rgba(255,255,255,0.6);">+263 77 837 6024</a></li>
+                        <li style="color:rgba(255,255,255,0.6); font-size:0.9rem;"><i class="fas fa-envelope" style="color:var(--grid-amber); margin-right:8px;"></i><a href="mailto:merggielonely@gmail.com" style="color:rgba(255,255,255,0.6);">merggielonely@gmail.com</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Alpha Junior School. Designed by <a href="https://devstudio.co.zw" target="_blank"
-                        rel="nofollow">devstudio.co.zw</a></p>
+                <p>&copy; 2026 Alpha Junior School, Chivhu. Designed by <a href="https://devstudio.co.zw" target="_blank" rel="nofollow">devstudio.co.zw</a></p>
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Pulse Button -->
+    <a href="https://wa.me/263778376024" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Chat with Alpha Junior School on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>

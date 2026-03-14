@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO Rule: Title between 50-60 characters -->
-    <title>Health, Safety & Transport | Alpha Junior School Chivhu</title>
+    <title>Health, Safety & Nutrition | Alpha Junior School Chivhu</title>
     <!-- SEO Rule: Meta Description between 150-160 characters -->
     <meta name="description"
-        content="Discover Alpha Junior School's commitment to safety. We offer 24/7 security, on-site medical care, and safe student transport services throughout Chivhu.">
+        content="Alpha Junior School prioritizes child health & safety. Learn about our hygiene standards, nutritious weekly meals, borehole water supply, and safe door-to-door transport.">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="assets/img/logo.jpg">
+    <link rel="canonical" href="https://alphajuniorschool.co.zw/safety.html">
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="manifest" href="manifest.json">
 
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
-    <!-- FontAwesome for Icons -->
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Custom Stylesheet -->
@@ -30,49 +30,50 @@
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Health and Safety Protocols",
-      "description": "Information regarding the security, health, and transport measures at Alpha Junior School."
+      "name": "Health, Safety & Nutrition at Alpha Junior School",
+      "description": "Information on the safety, hygiene, nutrition, and transport measures at Alpha Junior School in Chivhu, Zimbabwe."
     }
     </script>
 </head>
 
 <body>
 
-    <!-- Header Component -->
+    <!-- ===== HEADER ===== -->
     <header>
         <div class="top-bar">
             <div class="container">
                 <div class="top-bar-info">
                     <span><i class="fas fa-phone-alt"></i> +263 77 837 6024</span>
-                    <span><i class="fas fa-map-marker-alt"></i> Chivhu, Zimbabwe</span>
+                    <span><i class="fas fa-map-marker-alt"></i> 18848 Cloete Street, Chivhu</span>
                 </div>
                 <div class="top-bar-social">
-                    <a href="https://www.facebook.com/" target="_blank" aria-label="Visit Facebook Page"><i
-                            class="fab fa-facebook-f"></i></a>
+                    <span style="color: var(--grid-amber); font-weight: 600;">🎓 Enrolling Now – 2026!</span>
+                    <a href="https://www.facebook.com/AlphaJuniorSchoolChivhu" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/263778376024" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
 
-        <div class="header">
+        <div class="header" id="main-header">
             <div class="container nav-container">
-                <a href="index.html" class="logo">
-                    <img src="assets/img/logo.jpg" alt="AJS Main Logo">
+                <a href="index.html" class="logo" aria-label="Alpha Junior School Home">
+                    <img src="assets/img/logo.png" alt="Alpha Junior School Main Logo">
                     <div class="logo-text">
                         <span>Alpha Junior</span>
                         <span>School</span>
                     </div>
                 </a>
 
-                <nav class="nav-links">
+                <nav class="nav-links" id="nav-links" aria-label="Primary Navigation">
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="programs.html">Programs</a>
                     <a href="safety.html" class="active">Health & Safety</a>
                     <a href="contact.html">Contact</a>
-                    <a href="contact.html" class="btn btn-primary" style="color:white; margin-left:15px;">Enroll Now</a>
+                    <a href="contact.html" class="btn btn-primary" style="padding: 10px 24px;">Enroll Now</a>
                 </nav>
 
-                <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation" aria-expanded="false">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -80,101 +81,237 @@
     </header>
 
     <main>
-        <!-- SECTION 1: Inner Hero -->
-        <section class="hero"
-            style="background-image: url('assets/img/safety-bg.jpg'); height: 40vh; min-height: 350px;">
-            <div class="hero-content animate-on-scroll fade-up">
-                <p class="hero-subtitle">Student Welfare</p>
-                <h1 class="hero-title">A Secure Haven for Your Child</h1>
-            </div>
-        </section>
-
-        <!-- SECTION 2: Campus Security -->
-        <section class="section-padding">
-            <div class="container welcome-grid">
-                <article class="welcome-text animate-on-scroll fade-right">
-                    <div class="section-title" style="text-align: left;">
-                        <span>24/7 Protection</span>
-                        <h2>Unmatched Campus Security</h2>
+        <!-- ===== SECTION 1: INNER PAGE HERO ===== -->
+        <section class="hero hero-inner-page" style="background-image: url('assets/img/safety-bg.jpg'); min-height: 42vh;" aria-label="Health and Safety Hero">
+            <div class="hero-inner">
+                <div class="container">
+                    <div class="hero-text animate-on-scroll fade-up">
+                        <div class="hero-badge"><i class="fas fa-heart"></i> Student Welfare & Wellbeing</div>
+                        <!-- SEO Rule: Exactly ONE H1 tag per page -->
+                        <h1>Health, Safety &amp; Nutrition at Alpha Junior</h1>
+                        <p style="max-width: 560px;">A safe, hygienic, and nutritionally sound environment where every parent can trust their child is fully taken care of throughout the school day.</p>
                     </div>
-                    <p>At Alpha Junior School, safety is our priority. Our campus is fully fenced and monitored by
-                        full-time security personnel. We maintain strict visitor policies and sign-in procedures to
-                        ensure only authorized individuals enter the school premises.</p>
-                </article>
-                <div class="animate-on-scroll fade-left">
-                    <img src="assets/img/grid-2.jpg" alt="Security guard and fenced perimeter of the school campus"
-                        style="width:100%; border-radius:10px; box-shadow:var(--shadow-md);">
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 3: Medical Care & Hygiene -->
-        <section class="section-padding" style="background:var(--bg-light);">
+        <!-- ===== SECTION 2: HYGIENE STATS (INFOGRAPHIC) ===== -->
+        <section class="section-padding" aria-label="Hygiene and Safety Statistics">
             <div class="container">
-                <div class="section-title">
-                    <span>Health Services</span>
-                    <h2>Wellness & First Aid</h2>
+                <div class="section-title animate-on-scroll fade-up">
+                    <span class="overline">Our Commitment</span>
+                    <h2>Safety &amp; Hygiene Standards</h2>
                 </div>
-                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:30px;">
-                    <div class="animate-on-scroll fade-up" style="background:white; padding:30px; border-radius:10px;">
-                        <i class="fas fa-user-md"
-                            style="font-size:2rem; color:var(--primary-red); margin-bottom:15px;"></i>
-                        <h3>Trained First Aiders</h3>
-                        <p>Our staff includes certified first aid responders who are always ready to handle minor
-                            injuries and medical situations.</p>
+                <div class="stat-infographic animate-on-scroll fade-up">
+                    <div class="stat-bubble">
+                        <i class="fas fa-tint" style="color: #06B6D4;"></i>
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">Clean Borehole Water Supply</div>
                     </div>
-                    <div class="animate-on-scroll fade-up"
-                        style="background:white; padding:30px; border-radius:10px; transition-delay:0.1s;">
-                        <i class="fas fa-soap" style="font-size:2rem; color:var(--grid-cyan); margin-bottom:15px;"></i>
-                        <h3>Hygiene Standards</h3>
-                        <p>We maintain high cleanliness standards in all classrooms and washrooms, promoting a healthy
-                            environment for learners.</p>
+                    <div class="stat-bubble">
+                        <i class="fas fa-soap" style="color: var(--grid-green);"></i>
+                        <div class="stat-value">Daily</div>
+                        <div class="stat-label">Classroom Cleaning &amp; Sanitation</div>
+                    </div>
+                    <div class="stat-bubble">
+                        <i class="fas fa-user-nurse" style="color: var(--primary-red);"></i>
+                        <div class="stat-value">1:1</div>
+                        <div class="stat-label">Dedicated Hygiene &amp; Safety Instructor</div>
+                    </div>
+                    <div class="stat-bubble">
+                        <i class="fas fa-shield-alt" style="color: var(--accent-indigo);"></i>
+                        <div class="stat-value">Age</div>
+                        <div class="stat-label">Appropriate Toilet Facilities for All Ages</div>
+                    </div>
+                    <div class="stat-bubble">
+                        <i class="fas fa-hands-wash" style="color: var(--grid-amber);"></i>
+                        <div class="stat-value">3x</div>
+                        <div class="stat-label">Scheduled Handwashing Routines Daily</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 4: Student Transport -->
-        <section class="section-padding">
-            <div class="container welcome-grid">
-                <div class="animate-on-scroll fade-right">
-                    <img src="assets/img/grid-3.jpg" alt="The school bus used for daily student transport"
-                        style="width:100%; border-radius:10px; box-shadow:var(--shadow-md);">
+        <!-- ===== SECTION 3: WEEKLY MEAL ROSTER (Daily Menu Cards) ===== -->
+        <section class="section-padding" style="background: var(--bg-section);" aria-label="Weekly Meal Plan">
+            <div class="container">
+                <div class="section-title animate-on-scroll fade-up">
+                    <span class="overline">Nutrition &amp; Food Safety</span>
+                    <h2>Our Weekly Meal Roster</h2>
                 </div>
-                <article class="welcome-text animate-on-scroll fade-left">
-                    <div class="section-title" style="text-align: left;">
-                        <span>Reliable Shuttles</span>
-                        <h2>Safe School Transport</h2>
+                <p style="text-align: center; max-width: 600px; margin: -20px auto 40px; color: var(--text-muted);">
+                    Balanced, hygienically prepared meals served daily. Our Hygiene &amp; Safety Instructor oversees all food preparation to meet the highest standards.
+                </p>
+                <!-- Horizontal Daily Menu Cards -->
+                <div class="menu-cards-wrap animate-on-scroll fade-up">
+                    <div class="menu-card">
+                        <div class="day-label">Monday</div>
+                        <div class="meal-icon">🌽</div>
+                        <h4>Sadza &amp; Vegetables</h4>
+                        <p>Seasonal local vegetables with nutritious sadza</p>
                     </div>
-                    <p>We provide daily door-to-door transport for students living in Chivhu and nearby suburbs. Our
-                        drivers are fully licensed, vetted, and adhere to the highest road safety standards.</p>
-                    <p style="margin-top:15px;">Routes are carefully planned to minimize travel time while ensuring
-                        every child reaches home safely.</p>
-                </article>
+                    <div class="menu-card">
+                        <div class="day-label">Tuesday</div>
+                        <div class="meal-icon">🍗</div>
+                        <h4>Rice &amp; Chicken</h4>
+                        <p>Protein-rich chicken served with steamed rice</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="day-label">Wednesday</div>
+                        <div class="meal-icon">🫘</div>
+                        <h4>Sadza &amp; Beans</h4>
+                        <p>Fiber-rich beans paired with traditional sadza</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="day-label">Thursday</div>
+                        <div class="meal-icon">🥦</div>
+                        <h4>Rice &amp; Vegetables</h4>
+                        <p>Colorful vegetable mix served with rice</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="day-label">Friday</div>
+                        <div class="meal-icon">🥩</div>
+                        <h4>Sadza &amp; Beef / Chicken</h4>
+                        <p>Hearty end-of-week meal with protein</p>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 24px; font-size: 0.85rem; color: var(--text-muted);">
+                    <i class="fas fa-info-circle" style="color: var(--accent-indigo); margin-right: 6px;"></i>
+                    All meals are prepared fresh under daily hygiene supervision. Dietary requirements can be discussed with the school upon enrollment.
+                </p>
             </div>
         </section>
 
-        <!-- SECTION 5: Emergency Contacts -->
-        <section class="section-padding" style="background: var(--primary-black); color:white; text-align:center;">
-            <div class="container animate-on-scroll fade-up">
-                <h2 style="color:white; margin-bottom:20px;">Emergency Preparedness</h2>
-                <p style="max-width:700px; margin: 0 auto 30px;">We have a comprehensive emergency response plan,
-                    including fire drills and evacuation procedures that are practiced regularly with our students.</p>
-                <div style="display:inline-flex; gap:20px;">
-                    <a href="contact.html" class="btn btn-primary">Download Safety Policy</a>
-                    <a href="contact.html" class="btn btn-outline" style="border-color:white; color:white;">Contact
-                        Security Desk</a>
+        <!-- ===== SECTION 4: SANITATION & TRANSPORT ===== -->
+        <section class="section-padding" aria-label="Sanitation and Transport">
+            <div class="container">
+                <div class="split-grid" style="margin-bottom: 60px;">
+                    <article class="animate-on-scroll fade-right">
+                        <div class="section-title" style="text-align: left; margin-bottom: 24px;">
+                            <span class="overline">Campus Hygiene</span>
+                            <h2>Sanitation &amp; Facilities</h2>
+                        </div>
+                        <p>We maintain the highest cleanliness standards across all learning spaces. Our dedicated Hygiene and Safety Instructor oversees daily sanitation, proper waste disposal, and ensures all students follow handwashing routines after meals and outdoor activities.</p>
+                        <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 16px;">
+                            <div style="display: flex; align-items: center; gap: 14px; padding: 16px; background: var(--bg-section); border-radius: var(--radius-sm);">
+                                <i class="fas fa-toilet" style="color: var(--accent-indigo); font-size: 1.3rem; width: 28px;"></i>
+                                <div>
+                                    <strong>Age-Appropriate Toilets</strong>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Specially designed facilities for ECD learners to maintain independence and hygiene.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 14px; padding: 16px; background: var(--bg-section); border-radius: var(--radius-sm);">
+                                <i class="fas fa-tint" style="color: #06B6D4; font-size: 1.3rem; width: 28px;"></i>
+                                <div>
+                                    <strong>Borehole Water Supply</strong>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Clean, reliable borehole water ensures safe drinking water and hygiene facilities year-round.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 14px; padding: 16px; background: var(--bg-section); border-radius: var(--radius-sm);">
+                                <i class="fas fa-recycle" style="color: var(--grid-green); font-size: 1.3rem; width: 28px;"></i>
+                                <div>
+                                    <strong>Safe Waste Disposal</strong>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Regular waste collection and safe disposal procedures maintained across the entire campus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="animate-on-scroll fade-left">
+                        <img src="assets/img/grid-2.jpg" alt="Clean and well-maintained classroom environment at Alpha Junior School"
+                            style="width:100%; height:420px; object-fit:cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                    </div>
+                </div>
+
+                <!-- Transport Section -->
+                <div class="split-grid">
+                    <div class="animate-on-scroll fade-right">
+                        <img src="assets/img/grid-3.jpg" alt="Alpha Junior School safe student transport vehicle"
+                            style="width:100%; height:380px; object-fit:cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                    </div>
+                    <article class="animate-on-scroll fade-left">
+                        <div class="section-title" style="text-align: left; margin-bottom: 24px;">
+                            <span class="overline">Reliable Shuttles</span>
+                            <h2>Safe Door-to-Door Transport</h2>
+                        </div>
+                        <p>We provide daily door-to-door transport for students living across Chivhu and nearby areas. Our fully licensed, vetted drivers adhere to the highest road safety standards — ensuring every child arrives and returns home safely and on time.</p>
+                        <p style="margin-top: 16px; margin-bottom: 28px; color: var(--text-muted);">Routes are carefully planned to minimize travel time while maximizing coverage. Each vehicle accommodates a responsible adult attendant for young learners.</p>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                            <a href="contact.html" class="btn btn-primary"><i class="fas fa-bus"></i> Ask About Routes</a>
+                            <a href="tel:+263778376024" class="btn btn-outline"><i class="fas fa-phone"></i> Call Us</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 5: HEALTH GALLERY + EMERGENCY INFO ===== -->
+        <section class="section-padding" style="background: var(--bg-section);" aria-label="Health and Safety Gallery">
+            <div class="container">
+                <div class="section-title animate-on-scroll fade-up">
+                    <span class="overline">Visual Proof</span>
+                    <h2>Health &amp; Safety Gallery</h2>
+                </div>
+                <div class="gallery-scroll-wrap animate-on-scroll fade-up" style="margin-bottom: 56px;">
+                    <div class="gallery-card grainy-overlay">
+                        <img src="assets/img/grid-2.jpg" alt="Clean and organized Alpha Junior School facilities">
+                        <div class="overlay"></div>
+                        <span class="caption">Clean Facilities</span>
+                    </div>
+                    <div class="gallery-card grainy-overlay">
+                        <img src="assets/img/grid-3.jpg" alt="School transport vehicle for student pickup and drop-off">
+                        <div class="overlay"></div>
+                        <span class="caption">Safe Transport</span>
+                    </div>
+                    <div class="gallery-card grainy-overlay">
+                        <img src="assets/img/ece.jpg" alt="Supervised mealtime in the ECD wing">
+                        <div class="overlay"></div>
+                        <span class="caption">Supervised Meals</span>
+                    </div>
+                    <div class="gallery-card grainy-overlay">
+                        <img src="assets/img/primary.jpg" alt="Clean and organized classroom with handwashing facilities">
+                        <div class="overlay"></div>
+                        <span class="caption">Clean Classrooms</span>
+                    </div>
+                    <div class="gallery-card grainy-overlay">
+                        <img src="assets/img/safety-bg.jpg" alt="Safety supervision at Alpha Junior School">
+                        <div class="overlay"></div>
+                        <span class="caption">Safety Supervision</span>
+                    </div>
+                </div>
+
+                <!-- Emergency Preparedness -->
+                <div style="background: var(--primary-black); border-radius: var(--radius-lg); padding: 40px; text-align: center; position: relative; overflow: hidden;" class="animate-on-scroll fade-up">
+                    <div style="position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 50%, rgba(79,70,229,0.2), transparent 60%);"></div>
+                    <div style="position: relative; z-index: 1;">
+                        <i class="fas fa-first-aid" style="font-size: 2.5rem; color: var(--primary-red); margin-bottom: 16px;"></i>
+                        <h2 style="color: white; margin-bottom: 12px;">Emergency Preparedness</h2>
+                        <p style="max-width: 600px; margin: 0 auto 28px; color: rgba(255,255,255,0.65);">
+                            We have a comprehensive emergency response plan, including fire drills and evacuation procedures practiced regularly. Our staff are first aid certified and trained to handle any situation calmly and effectively.
+                        </p>
+                        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                            <a href="contact.html" class="btn btn-primary"><i class="fas fa-envelope"></i> Request Safety Policy</a>
+                            <a href="tel:+263778376024" class="btn btn-outline-white"><i class="fas fa-phone"></i> Contact Safety Desk</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer Component -->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/img/logo.png" alt="Alpha Junior School Logo" style="width: 72px; margin-bottom: 16px; border-radius: 8px;">
+                    <p>Your child's safety and wellbeing is our highest priority at Alpha Junior School.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/AlphaJuniorSchoolChivhu" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/263778376024" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
                 <nav class="footer-col" aria-label="Footer Navigation Links">
-                    <h4>About Us</h4>
+                    <h4>Navigation</h4>
                     <ul>
                         <li><a href="index.html">Home Page</a></li>
                         <li><a href="about.html">Our School</a></li>
@@ -183,13 +320,26 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
+                <div class="footer-col">
+                    <h4>Emergency Contact</h4>
+                    <ul>
+                        <li style="color:rgba(255,255,255,0.6); font-size:0.9rem; margin-bottom:10px;"><i class="fas fa-phone" style="color:var(--primary-red); margin-right:8px;"></i><a href="tel:+263778376024" style="color:rgba(255,255,255,0.6);">+263 77 837 6024</a></li>
+                        <li style="color:rgba(255,255,255,0.6); font-size:0.9rem; margin-bottom:10px;"><i class="fas fa-map-marker-alt" style="color:var(--grid-amber); margin-right:8px;"></i>18848 Cloete Street, Chivhu</li>
+                        <li style="color:rgba(255,255,255,0.6); font-size:0.9rem;"><i class="fas fa-clock" style="color:var(--grid-amber); margin-right:8px;"></i>Mon–Fri: 07:30 – 15:30</li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Alpha Junior School. Designed by <a href="https://devstudio.co.zw" target="_blank"
-                        rel="nofollow">devstudio.co.zw</a></p>
+                <p>&copy; 2026 Alpha Junior School, Chivhu. Designed by <a href="https://devstudio.co.zw" target="_blank" rel="nofollow">devstudio.co.zw</a></p>
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Pulse Button -->
+    <a href="https://wa.me/263778376024" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Chat with Alpha Junior School on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
