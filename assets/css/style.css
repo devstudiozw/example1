@@ -19,7 +19,7 @@
     --accent-indigo: #0ea5a4;
     --accent-violet: #2dd4bf;
     --accent-indigo-glow: rgba(14, 165, 164, 0.35);
-    --gradient-cta: linear-gradient(135deg, 0ea5a4 0%, #2dd4bf 100%);
+    --gradient-cta: linear-gradient(135deg, #0ea5a4 0%, #2dd4bf 100%);
 
     /* Vibrant Grid Accent Colors */
     --grid-amber: #F59E0B;
@@ -39,12 +39,12 @@
     /* Glass Morphism */
     --glass-bg: rgba(255, 255, 255, 0.15);
     --glass-border: rgba(255, 255, 255, 0.25);
-    --glass-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+    --glass-shadow: 0 8px 32px rgba(13, 148, 136, 0.15);
 
     /* Shadows */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
     --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.10);
-    --shadow-hover: 0 12px 32px rgba(79, 70, 229, 0.20);
+    --shadow-hover: 0 12px 32px rgba(20, 184, 166, 0.20);
     --shadow-lift: 0 16px 40px rgba(0, 0, 0, 0.16);
 
     /* Corners - Squircle */
@@ -161,7 +161,7 @@ h3 {
 }
 
 .section-title .overline {
-    color: var(--accent-indigo);
+    color: var(--accent-teal);
     font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -191,17 +191,17 @@ h3 {
     white-space: nowrap;
 }
 
-/* Primary - Indigo gradient with pulse */
+/* Primary - Teal gradient with pulse */
 .btn-primary {
     background: var(--gradient-cta);
     color: var(--pure-white);
-    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
-    animation: pulse-indigo 2.5s infinite;
+    box-shadow: 0 4px 15px rgba(13, 148, 136, 0.4);
+    animation: pulse-teal 2.5s infinite;
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.55);
+    box-shadow: 0 8px 25px rgba(13, 148, 136, 0.55);
     animation: none;
 }
 
@@ -220,8 +220,8 @@ h3 {
 /* Outline */
 .btn-outline {
     background-color: transparent;
-    border: 2px solid var(--accent-indigo);
-    color: var(--accent-indigo);
+    border: 2px solid var(--accent-teal);
+    color: var(--accent-teal);
 }
 
 .btn-outline:hover {
@@ -266,17 +266,17 @@ h3 {
     background: rgba(255, 255, 255, 0.25);
 }
 
-@keyframes pulse-indigo {
+@keyframes pulse-teal {
     0% {
-        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.55);
+        box-shadow: 0 0 0 0 rgba(20, 184, 166, 0.55);
     }
 
     70% {
-        box-shadow: 0 0 0 12px rgba(79, 70, 229, 0);
+        box-shadow: 0 0 0 12px rgba(20, 184, 166, 0);
     }
 
     100% {
-        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+        box-shadow: 0 0 0 0 rgba(20, 184, 166, 0);
     }
 }
 
@@ -391,7 +391,7 @@ h3 {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--accent-indigo);
+    color: var(--accent-teal);
 }
 
 .nav-links a:hover::after,
@@ -426,7 +426,7 @@ h3 {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(17, 24, 39, 0.78) 0%, rgba(79, 70, 229, 0.45) 100%);
+    background: linear-gradient(135deg, rgba(17, 24, 39, 0.78) 0%, rgba(13, 148, 136, 0.45) 100%);
     z-index: 1;
 }
 
@@ -567,12 +567,12 @@ h3 {
 .bento-item:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-hover);
-    border-color: var(--accent-indigo);
+    border-color: var(--accent-teal);
 }
 
 .bento-item.featured {
     grid-column: span 2;
-    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+    background: linear-gradient(135deg, #134e4a 0%, #0f766e 100%);
     color: white;
     position: relative;
     overflow: hidden;
@@ -633,7 +633,7 @@ h3 {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
-    scrollbar-color: var(--accent-indigo) var(--border-color);
+    scrollbar-color: var(--accent-teal) var(--border-color);
 }
 
 .gallery-scroll-wrap::-webkit-scrollbar {
@@ -646,7 +646,7 @@ h3 {
 }
 
 .gallery-scroll-wrap::-webkit-scrollbar-thumb {
-    background: var(--accent-indigo);
+    background: var(--accent-teal);
     border-radius: 5px;
 }
 
@@ -880,7 +880,7 @@ h3 {
     border: none;
     font-size: 0.85rem;
     font-weight: 600;
-    color: var(--accent-indigo);
+    color: var(--accent-teal);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -928,7 +928,7 @@ h3 {
 .tab-btn.active {
     background: var(--gradient-cta);
     color: white;
-    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+    box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
 }
 
 .tab-panel {
@@ -953,7 +953,7 @@ h3 {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(to bottom, var(--accent-indigo), var(--grid-amber));
+    background: linear-gradient(to bottom, var(--accent-teal), var(--grid-amber));
     border-radius: 2px;
 }
 
@@ -981,7 +981,7 @@ h3 {
 .timeline-item.active .timeline-dot {
     background: var(--gradient-cta);
     border-color: transparent;
-    box-shadow: 0 0 0 6px rgba(79, 70, 229, 0.15);
+    box-shadow: 0 0 0 6px rgba(13, 148, 136, 0.15);
     transform: scale(1.2);
 }
 
@@ -1006,7 +1006,7 @@ h3 {
 .quote-card .quote-mark {
     font-size: 6rem;
     line-height: 1;
-    color: var(--accent-indigo);
+    color: var(--accent-teal);
     font-family: Georgia, serif;
     position: absolute;
     top: 10px;
@@ -1022,7 +1022,7 @@ h3 {
     position: relative;
     z-index: 1;
     color: var(--primary-black);
-    border-left: 4px solid var(--accent-indigo);
+    border-left: 4px solid var(--accent-teal);
     padding-left: 24px;
     margin-bottom: 24px;
 }
@@ -1038,7 +1038,7 @@ h3 {
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--accent-indigo);
+    border: 3px solid var(--accent-teal);
 }
 
 .quote-author h4 {
@@ -1075,7 +1075,7 @@ h3 {
 .menu-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
-    border-color: var(--accent-indigo);
+    border-color: var(--accent-teal);
 }
 
 .menu-card .day-label {
@@ -1083,7 +1083,7 @@ h3 {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: var(--accent-indigo);
+    color: var(--accent-teal);
     margin-bottom: 10px;
 }
 
@@ -1189,8 +1189,8 @@ h3 {
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-    border-color: var(--accent-indigo);
-    box-shadow: 0 0 0 4px var(--accent-indigo-glow);
+    border-color: var(--accent-teal);
+    box-shadow: 0 0 0 4px var(--accent-teal-glow);
 }
 
 .form-group label {
@@ -1220,7 +1220,7 @@ h3 {
     top: 6px;
     transform: none;
     font-size: 0.72rem;
-    color: var(--accent-indigo);
+    color: var(--accent-teal);
     font-weight: 600;
 }
 
@@ -1352,8 +1352,8 @@ h3 {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 20% 50%, rgba(79, 70, 229, 0.25) 0%, transparent 65%),
-        radial-gradient(ellipse at 80% 50%, rgba(124, 58, 237, 0.2) 0%, transparent 65%);
+    background: radial-gradient(ellipse at 20% 50%, rgba(20, 184, 166, 0.25) 0%, transparent 65%),
+        radial-gradient(ellipse at 80% 50%, rgba(45, 212, 191, 0.2) 0%, transparent 65%);
     pointer-events: none;
 }
 
@@ -1446,8 +1446,8 @@ h3 {
     background: linear-gradient(to top, rgba(17, 24, 39, 0.85) 0%, rgba(17, 24, 39, 0.3) 100%);
 }
 
-.mi-bg-indigo .mi-overlay {
-    background: linear-gradient(135deg, rgba(79, 70, 229, 0.92), rgba(124, 58, 237, 0.88));
+.mi-bg-violet .mi-overlay {
+    background: linear-gradient(135deg, rgba(20, 184, 166, 0.92), rgba(45, 212, 191, 0.88));
 }
 
 .mi-bg-amber .mi-overlay {
