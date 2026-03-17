@@ -4,23 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Rule: Title between 50-60 characters -->
     <title>About Alpha Junior School | Chivhu's Top Primary Education</title>
-    <!-- SEO Rule: Meta Description between 150-160 characters -->
-    <meta name="description"
-        content="Learn about Alpha Junior School in Chivhu. Founded on excellence, we provide world-class ECD and primary education for children aged 18 months to 10 years.">
+    <meta name="description" content="Learn about Alpha Junior School in Chivhu. Founded on excellence, we provide world-class ECD and primary education for children aged 18 months to 10 years.">
 
+    <!-- Canonical & Open Graph -->
     <link rel="canonical" href="https://alphajuniorschool.co.zw/about.html">
+    <meta property="og:title" content="About Alpha Junior School | Chivhu's Top Primary Education">
+    <meta property="og:description" content="Founded on excellence, Alpha Junior School provides quality ECD and primary education for children aged 18 months to 10 years in Chivhu, Zimbabwe.">
+    <meta property="og:url" content="https://alphajuniorschool.co.zw/about.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://alphajuniorschool.co.zw/assets/img/hero-bg.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Alpha Junior School">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Alpha Junior School | Chivhu's Top Primary Education">
+    <meta name="twitter:description" content="Founded on excellence, Alpha Junior School provides quality ECD and primary education for children aged 18 months to 10 years in Chivhu, Zimbabwe.">
+    <meta name="twitter:image" content="https://alphajuniorschool.co.zw/assets/img/hero-bg.jpg">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/logo.png">
     <link rel="manifest" href="manifest.json">
 
-    <!-- Google Fonts: Poppins -->
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="assets/img/hero-bg.jpg">
+
+    <!-- Google Fonts: Non-render-blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"></noscript>
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- FontAwesome: Non-render-blocking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -34,7 +53,15 @@
         "@type": "EducationalOrganization",
         "name": "Alpha Junior School",
         "url": "https://alphajuniorschool.co.zw",
-        "description": "Alpha Junior School is a primary school in Chivhu providing quality ECD to Grade 4 education."
+        "description": "Alpha Junior School is a primary school in Chivhu providing quality ECD to Grade 4 education.",
+        "telephone": "+263778376024",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "18848 Cloete Street",
+          "addressLocality": "Chivhu",
+          "addressRegion": "Mashonaland East",
+          "addressCountry": "ZW"
+        }
       }
     }
     </script>
@@ -47,7 +74,7 @@
         <div class="top-bar">
             <div class="container">
                 <div class="top-bar-info">
-                    <span><i class="fas fa-envelope"></i> merggielonely@gmail.com</span>
+                    <span><i class="fas fa-envelope"></i> info@alphajuniorschool.co.zw</span>
                     <span><i class="fas fa-clock"></i> Mon – Fri: 07:30 – 15:30</span>
                 </div>
                 <div class="top-bar-social">
@@ -61,7 +88,7 @@
         <div class="header" id="main-header">
             <div class="container nav-container">
                 <a href="index.html" class="logo" aria-label="Alpha Junior School Home">
-                    <img src="assets/img/logo.png" alt="Alpha Junior School Logo">
+                    <img src="assets/img/logo.png" alt="Alpha Junior School Logo" width="48" height="48">
                     <div class="logo-text">
                         <span>Alpha Junior</span>
                         <span>School</span>
@@ -77,12 +104,16 @@
                     <a href="contact.html" class="btn btn-primary" style="padding: 10px 24px;">Enroll Now</a>
                 </nav>
 
-                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
     </header>
+
+    <noscript>
+        <style>.animate-on-scroll { opacity: 1 !important; transform: none !important; }</style>
+    </noscript>
 
     <main>
         <!-- ===== SECTION 1: INNER PAGE HERO ===== -->
@@ -91,7 +122,6 @@
                 <div class="container">
                     <div class="hero-text animate-on-scroll fade-up">
                         <div class="hero-badge"><i class="fas fa-school"></i> Who We Are</div>
-                        <!-- SEO Rule: Exactly ONE H1 tag per page -->
                         <h1>About Alpha Junior School</h1>
                         <p style="max-width: 540px;">Established to nurture young minds in Chivhu — building literacy, numeracy, and character from ECD through Grade 4.</p>
                     </div>
@@ -104,7 +134,8 @@
             <div class="container">
                 <div class="split-grid">
                     <div class="animate-on-scroll fade-right">
-                        <img src="assets/img/students-outside.jpg" alt="Students in front of the Alpha Junior School building in Chivhu"
+                        <!-- students-outside.jpg = students in front of the school building -->
+                        <img src="assets/img/students-outside.jpg" alt="Students gathered outside the Alpha Junior School building in Chivhu" width="640" height="420" loading="lazy"
                             style="width:100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); height: 420px; object-fit: cover;">
                     </div>
                     <article class="animate-on-scroll fade-left">
@@ -129,12 +160,12 @@
             </div>
         </section>
 
-        <!-- ===== SECTION 3: HEADTEACHER'S MESSAGE (Quote Card) ===== -->
+        <!-- ===== SECTION 3: HEADTEACHER'S MESSAGE ===== -->
         <section class="section-padding" style="background: var(--bg-section);" aria-label="Message from the Head">
             <div class="container">
                 <div class="section-title animate-on-scroll fade-up">
                     <span class="overline">A Word from Leadership</span>
-                    <h2>Message from the Headteacher</h2>
+                    <h2>Message from the Head Teacher</h2>
                 </div>
                 <div class="quote-card animate-on-scroll fade-up" style="max-width: 820px; margin: 0 auto;">
                     <div class="quote-mark">&ldquo;</div>
@@ -142,17 +173,18 @@
                         "At Alpha Junior, we don't just teach subjects; we mold lives. Every child is unique and capable. Our commitment is to ensure that every learner walks out of these gates with the confidence to face the world — guided by patience, encouragement, and high-quality teaching. We invite you to be part of our growing family."
                     </blockquote>
                     <div class="quote-author">
-                        <img src="assets/img/headteacher.jpg" alt="Portrait of the Alpha Junior School Headteacher">
+                        <!-- headteacher.jpg = portrait of the school head teacher -->
+                        <img src="assets/img/headteacher.jpg" alt="Portrait of Mrs Alpha Chidhumo, Head Teacher and Founder of Alpha Junior School" width="64" height="64" loading="lazy">
                         <div>
                             <h4>Mrs. Alpha Chidhumo</h4>
-                            <p>Headmaster &amp; Founder, Alpha Junior School</p>
+                            <p>Head Teacher &amp; Founder, Alpha Junior School</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ===== SECTION 4: EDUCATIONAL PHILOSOPHY (Timeline) ===== -->
+        <!-- ===== SECTION 4: EDUCATIONAL PHILOSOPHY ===== -->
         <section class="section-padding" aria-label="Educational Philosophy">
             <div class="container">
                 <div class="split-grid" style="align-items: flex-start;">
@@ -161,7 +193,6 @@
                             <span class="overline">Our Approach</span>
                             <h2>Educational Philosophy</h2>
                         </div>
-                        <!-- Vertical Timeline -->
                         <div class="timeline" id="philosophy-timeline">
                             <div class="timeline-item active">
                                 <div class="timeline-dot"></div>
@@ -194,10 +225,14 @@
                     <!-- About Gallery -->
                     <div class="animate-on-scroll fade-left">
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
-                            <img src="assets/img/daycarestudent.jpg" alt="Young children learning at Alpha Junior's ECD wing" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius-md);">
-                            <img src="assets/img/hero-bg.jpg" alt="The Alpha Junior School building in Chivhu" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius-md);">
-                            <img src="assets/img/student-with-teachers-outside.jpg" alt="Staff members engaging with students at Alpha Junior School" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius-md);">
-                            <img src="assets/img/extracurricularactivities.jpg" alt="Community event at Alpha Junior School" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius-md);">
+                            <!-- daycarestudent.jpg = young child in daycare / early learning -->
+                            <img src="assets/img/daycarestudent.jpg" alt="Young child in the early learning daycare wing at Alpha Junior School" width="300" height="200" loading="lazy" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius-md);">
+                            <!-- hero-bg.jpg = school building / campus exterior -->
+                            <img src="assets/img/hero-bg.jpg" alt="Alpha Junior School campus building in Chivhu, Zimbabwe" width="300" height="200" loading="lazy" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius-md);">
+                            <!-- student-with-teachers-outside.jpg = staff with students outdoors -->
+                            <img src="assets/img/student-with-teachers-outside.jpg" alt="Teachers engaging with students outside on the Alpha Junior School grounds" width="300" height="200" loading="lazy" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius-md);">
+                            <!-- extracurricularactivities.jpg = students in extracurricular activities -->
+                            <img src="assets/img/extracurricularactivities.jpg" alt="Students participating in extracurricular activities at Alpha Junior School" width="300" height="200" loading="lazy" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius-md);">
                         </div>
                     </div>
                 </div>
@@ -234,11 +269,22 @@
                     </div>
                 </div>
 
-                <!-- Future Plans -->
                 <div style="margin-top: 56px; text-align: center; max-width: 640px; margin-left: auto; margin-right: auto;" class="animate-on-scroll fade-up">
                     <h3 style="color: white; margin-bottom: 12px;"><i class="fas fa-rocket" style="color: var(--grid-amber); margin-right: 10px;"></i>Our Future Vision</h3>
                     <p style="color: rgba(255,255,255,0.6); margin-bottom: 28px;">We plan to expand our facilities, introduce new programs, and potentially extend grade levels to serve our growing Chivhu community. The best is yet to come for Alpha Junior School.</p>
                     <a href="contact.html" class="btn btn-primary">Join Our Growing Family</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA BANNER ===== -->
+        <section class="cta-banner" aria-label="Enrollment Call to Action">
+            <div class="container animate-on-scroll fade-up">
+                <h2>Be Part of the Alpha Junior Story</h2>
+                <p>Enroll your child at Alpha Junior School and give them the strong foundation they deserve. Applications for the 2026 academic year are now open.</p>
+                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-primary"><i class="fas fa-user-plus"></i> Apply for Admission</a>
+                    <a href="tel:+263778376024" class="btn btn-outline-white"><i class="fas fa-phone"></i> Call: +263 77 837 6024</a>
                 </div>
             </div>
         </section>
@@ -249,11 +295,11 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="assets/img/logo.png" alt="AJS Logo" style="width: 72px; margin-bottom: 16px; border-radius: 8px;">
+                    <img src="assets/img/logo.png" alt="Alpha Junior School Logo" width="72" height="72" loading="lazy" style="width: 72px; margin-bottom: 16px; border-radius: 8px;">
                     <p>Nurturing excellence in every child from ECD through Grade 4 in Chivhu, Zimbabwe.</p>
                     <div class="footer-social">
-                        <a href="https://www.facebook.com/AlphaJuniorSchoolChivhu" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://wa.me/263778376024" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/AlphaJuniorSchoolChivhu" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/263778376024" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <nav class="footer-col" aria-label="Footer Quick Links">
@@ -271,23 +317,20 @@
                     <ul>
                         <li style="color:rgba(255,255,255,0.6); font-size:0.9rem; margin-bottom:10px;"><i class="fas fa-map-marker-alt" style="color:var(--grid-amber); margin-right:8px;"></i>18848 Cloete Street, Chivhu</li>
                         <li style="color:rgba(255,255,255,0.6); font-size:0.9rem; margin-bottom:10px;"><i class="fas fa-phone" style="color:var(--grid-amber); margin-right:8px;"></i><a href="tel:+263778376024" style="color:rgba(255,255,255,0.6);">+263 77 837 6024</a></li>
-                        <li style="color:rgba(255,255,255,0.6); font-size:0.9rem;"><i class="fas fa-envelope" style="color:var(--grid-amber); margin-right:8px;"></i><a href="mailto:merggielonely@gmail.com" style="color:rgba(255,255,255,0.6);">merggielonely@gmail.com</a></li>
+                        <li style="color:rgba(255,255,255,0.6); font-size:0.9rem;"><i class="fas fa-envelope" style="color:var(--grid-amber); margin-right:8px;"></i><a href="mailto:info@alphajuniorschool.co.zw" style="color:rgba(255,255,255,0.6);">info@alphajuniorschool.co.zw</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Alpha Junior School, Chivhu. Designed by <a href="https://devstudio.co.zw" target="_blank" rel="nofollow">devstudio.co.zw</a></p>
+                <p>&copy; 2026 Alpha Junior School, Chivhu. Designed by <a href="https://devstudio.co.zw" target="_blank" rel="noopener">devstudio.co.zw</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Pulse Button -->
-    <a href="https://wa.me/263778376024" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
-        aria-label="Chat with Alpha Junior School on WhatsApp">
+    <a href="https://wa.me/263778376024" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with Alpha Junior School on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Scripts -->
     <script src="assets/js/main.js"></script>
 </body>
 

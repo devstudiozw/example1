@@ -4,23 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Rule: Title between 50-60 characters -->
     <title>Academic Programs | Alpha Junior School ECD & Primary</title>
-    <!-- SEO Rule: Meta Description between 150-160 characters -->
-    <meta name="description"
-        content="Explore Alpha Junior School's programs: ECD (18 months+), ECD A&B, Grade 1-4, plus extracurriculars—Computers, Taekwondo, Swimming & Tennis in Chivhu.">
+    <meta name="description" content="Explore Alpha Junior School's programs: ECD (18 months+), ECD A&B, Grade 1-4, plus extracurriculars—Computers, Taekwondo, Swimming & Tennis in Chivhu.">
 
+    <!-- Canonical & Open Graph -->
     <link rel="canonical" href="https://alphajuniorschool.co.zw/programs.html">
+    <meta property="og:title" content="Academic Programs | Alpha Junior School ECD & Primary Education">
+    <meta property="og:description" content="Explore Alpha Junior School's programs: ECD from 18 months, ECD A&B, Grade 1–4, plus Computers, Taekwondo, Swimming & Tennis in Chivhu, Zimbabwe.">
+    <meta property="og:url" content="https://alphajuniorschool.co.zw/programs.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://alphajuniorschool.co.zw/assets/img/hero-bg.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Alpha Junior School">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Academic Programs | Alpha Junior School ECD & Primary Education">
+    <meta name="twitter:description" content="Explore Alpha Junior School's programs: ECD from 18 months, ECD A&B, Grade 1–4, plus Computers, Taekwondo, Swimming & Tennis in Chivhu, Zimbabwe.">
+    <meta name="twitter:image" content="https://alphajuniorschool.co.zw/assets/img/hero-bg.jpg">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/logo.png">
     <link rel="manifest" href="manifest.json">
 
-    <!-- Google Fonts: Poppins -->
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="assets/img/hero-bg.jpg">
+
+    <!-- Google Fonts: Non-render-blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"></noscript>
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- FontAwesome: Non-render-blocking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -34,9 +53,10 @@
       "provider": {
         "@type": "EducationalOrganization",
         "name": "Alpha Junior School",
-        "url": "https://alphajuniorschool.co.zw"
+        "url": "https://alphajuniorschool.co.zw",
+        "telephone": "+263778376024"
       },
-      "description": "Early Childhood Development and Primary education programs from 18 months to Grade 4."
+      "description": "Early Childhood Development and Primary education programs from 18 months to Grade 4 in Chivhu, Zimbabwe."
     }
     </script>
 </head>
@@ -48,7 +68,7 @@
         <div class="top-bar">
             <div class="container">
                 <div class="top-bar-info">
-                    <span><i class="fas fa-envelope"></i> merggielonely@gmail.com</span>
+                    <span><i class="fas fa-envelope"></i> info@alphajuniorschool.co.zw</span>
                     <span><i class="fas fa-clock"></i> Mon – Fri: 07:30 – 15:30</span>
                 </div>
                 <div class="top-bar-social">
@@ -62,7 +82,7 @@
         <div class="header" id="main-header">
             <div class="container nav-container">
                 <a href="index.html" class="logo" aria-label="Alpha Junior School Home">
-                    <img src="assets/img/logo.png" alt="Alpha Junior School Logo">
+                    <img src="assets/img/logo.png" alt="Alpha Junior School Logo" width="48" height="48">
                     <div class="logo-text">
                         <span>Alpha Junior</span>
                         <span>School</span>
@@ -78,12 +98,16 @@
                     <a href="contact.html" class="btn btn-primary" style="padding: 10px 24px;">Enroll Now</a>
                 </nav>
 
-                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
     </header>
+
+    <noscript>
+        <style>.animate-on-scroll { opacity: 1 !important; transform: none !important; } .tab-panel { display: block !important; }</style>
+    </noscript>
 
     <main>
         <!-- ===== SECTION 1: INNER PAGE HERO ===== -->
@@ -92,7 +116,6 @@
                 <div class="container">
                     <div class="hero-text animate-on-scroll fade-up">
                         <div class="hero-badge"><i class="fas fa-graduation-cap"></i> Our Curriculum</div>
-                        <!-- SEO Rule: Exactly ONE H1 tag per page -->
                         <h1>Academic Programs &amp; Extracurricular Activities</h1>
                         <p style="max-width: 580px;">From play-based early learning to structured primary education — a holistic journey designed for every stage of your child's development.</p>
                     </div>
@@ -108,16 +131,16 @@
                     <h2>Our Academic Journey</h2>
                 </div>
 
-                <!-- Pill-shaped Tab Buttons (sliding highlight) -->
+                <!-- Pill-shaped Tab Buttons -->
                 <div class="tabs-wrap animate-on-scroll fade-up" role="tablist" aria-label="Program Categories">
-                    <button class="tab-btn active" data-tab="early" role="tab" aria-selected="true" aria-controls="tab-early">Early Learning</button>
-                    <button class="tab-btn" data-tab="ecd" role="tab" aria-selected="false" aria-controls="tab-ecd">ECD A &amp; B</button>
-                    <button class="tab-btn" data-tab="primary" role="tab" aria-selected="false" aria-controls="tab-primary">Grade 1–4</button>
-                    <button class="tab-btn" data-tab="extra" role="tab" aria-selected="false" aria-controls="tab-extra">Extracurriculars</button>
+                    <button class="tab-btn active" data-tab="early" role="tab" aria-selected="true" aria-controls="tab-early" id="tab-btn-early">Early Learning</button>
+                    <button class="tab-btn" data-tab="ecd" role="tab" aria-selected="false" aria-controls="tab-ecd" id="tab-btn-ecd" tabindex="-1">ECD A &amp; B</button>
+                    <button class="tab-btn" data-tab="primary" role="tab" aria-selected="false" aria-controls="tab-primary" id="tab-btn-primary" tabindex="-1">Grade 1–4</button>
+                    <button class="tab-btn" data-tab="extra" role="tab" aria-selected="false" aria-controls="tab-extra" id="tab-btn-extra" tabindex="-1">Extracurriculars</button>
                 </div>
 
                 <!-- Tab: Early Learning -->
-                <div class="tab-panel active" id="tab-early" role="tabpanel">
+                <div class="tab-panel active" id="tab-early" role="tabpanel" aria-labelledby="tab-btn-early" aria-hidden="false">
                     <div class="split-grid">
                         <article class="animate-on-scroll fade-right">
                             <div class="section-title" style="text-align: left; margin-bottom: 24px;">
@@ -134,17 +157,19 @@
                             <a href="contact.html" class="btn btn-primary" style="margin-top: 28px;"><i class="fas fa-user-plus"></i> Enroll for Early Learning</a>
                         </article>
                         <div class="animate-on-scroll fade-left">
-                            <img src="assets/img/18-months-to-24-months-students-with-a teacher.jpg" alt="Toddlers in play-based learning at Alpha Junior School's early childhood program"
+                            <!-- 18-months-to-24-months-students-with-a teacher.jpg = toddlers with teacher in early learning -->
+                            <img src="assets/img/18-months-to-24-months-students-with-a teacher.jpg" alt="Toddlers aged 18 to 24 months in guided play-based learning with their ECD teacher" width="640" height="380" loading="lazy"
                                 style="width:100%; height:380px; object-fit:cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
                         </div>
                     </div>
                 </div>
 
                 <!-- Tab: ECD A & B -->
-                <div class="tab-panel" id="tab-ecd" role="tabpanel">
+                <div class="tab-panel" id="tab-ecd" role="tabpanel" aria-labelledby="tab-btn-ecd" aria-hidden="true">
                     <div class="split-grid">
                         <div class="animate-on-scroll fade-right">
-                            <img src="assets/img/ecda-b-students.jpg" alt="ECD A and B students engaged in literacy and numeracy activities"
+                            <!-- ecda-b-students.jpg = ECD A and B age group students in class -->
+                            <img src="assets/img/ecda-b-students.jpg" alt="ECD A and B students aged 3 to 6 engaged in literacy and numeracy activities at Alpha Junior School" width="640" height="380" loading="lazy"
                                 style="width:100%; height:380px; object-fit:cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
                         </div>
                         <article class="animate-on-scroll fade-left">
@@ -165,7 +190,7 @@
                 </div>
 
                 <!-- Tab: Grade 1–4 -->
-                <div class="tab-panel" id="tab-primary" role="tabpanel">
+                <div class="tab-panel" id="tab-primary" role="tabpanel" aria-labelledby="tab-btn-primary" aria-hidden="true">
                     <div class="section-title animate-on-scroll fade-up" style="margin-bottom: 36px;">
                         <span class="overline" style="color: var(--accent-indigo);">6 – 10 Years | ZIMSEC Aligned</span>
                         <h2>Grade 1 to Grade 4 Primary Education</h2>
@@ -244,7 +269,7 @@
                 </div>
 
                 <!-- Tab: Extracurriculars -->
-                <div class="tab-panel" id="tab-extra" role="tabpanel">
+                <div class="tab-panel" id="tab-extra" role="tabpanel" aria-labelledby="tab-btn-extra" aria-hidden="true">
                     <div class="section-title animate-on-scroll fade-up" style="margin-bottom: 36px;">
                         <span class="overline" style="color: var(--grid-green);">Beyond the Classroom</span>
                         <h2>Extracurricular Activities</h2>
@@ -285,35 +310,40 @@
                 </div>
                 <div class="gallery-scroll-wrap animate-on-scroll fade-up">
                     <div class="gallery-card grainy-overlay">
-                        <img src="assets/img/daycarestudent.jpg" alt="ECD students in play-based learning activities">
+                        <!-- daycarestudent.jpg = young child in daycare / ECD class -->
+                        <img src="assets/img/daycarestudent.jpg" alt="Young ECD student in play-based learning at Alpha Junior School" width="400" height="300" loading="lazy">
                         <div class="overlay"></div>
                         <span class="caption">ECD Learning</span>
                     </div>
                     <div class="gallery-card grainy-overlay">
-                        <img src="assets/img/grade-1-4.jpg" alt="Grade 3 students in a well-resourced classroom">
+                        <!-- grade-1-4.jpg = Grade 1 to 4 students in classroom -->
+                        <img src="assets/img/grade-1-4.jpg" alt="Grade 1 to 4 students in a well-resourced classroom at Alpha Junior School" width="400" height="300" loading="lazy">
                         <div class="overlay"></div>
                         <span class="caption">Primary Classes</span>
                     </div>
                     <div class="gallery-card grainy-overlay">
-                        <img src="assets/img/sports.jpg" alt="Students competing in sports activities">
+                        <!-- sports.jpg = students competing in sports activities -->
+                        <img src="assets/img/sports.jpg" alt="Students competing in sports and athletics activities at Alpha Junior School" width="400" height="300" loading="lazy">
                         <div class="overlay"></div>
                         <span class="caption">Sports &amp; Athletics</span>
                     </div>
                     <div class="gallery-card grainy-overlay">
-                        <img src="assets/img/creative-arts.jpg" alt="Students proudly displaying their creative artwork">
+                        <!-- creative-arts.jpg = students displaying creative artwork -->
+                        <img src="assets/img/creative-arts.jpg" alt="Students proudly displaying their creative artwork at Alpha Junior School" width="400" height="300" loading="lazy">
                         <div class="overlay"></div>
                         <span class="caption">Creative Arts</span>
                     </div>
                     <div class="gallery-card grainy-overlay">
-                        <img src="assets/img/students-using-computers.jpg" alt="Students in group learning session">
+                        <!-- students-using-computers.jpg = students using computers in the lab -->
+                        <img src="assets/img/students-using-computers.jpg" alt="Students using computers in the digital skills lab at Alpha Junior School" width="400" height="300" loading="lazy">
                         <div class="overlay"></div>
-                        <span class="caption">Teamwork Skills</span>
+                        <span class="caption">Digital Skills Lab</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ===== SECTION 4: ABOUT ZIMSEC ===== -->
+        <!-- ===== SECTION 4: ZIMSEC CURRICULUM ===== -->
         <section class="section-padding" aria-label="ZIMSEC Curriculum Info">
             <div class="container">
                 <div class="split-grid">
@@ -371,11 +401,11 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="assets/img/logo.png" alt="Alpha Junior School Logo" style="width: 72px; margin-bottom: 16px; border-radius: 8px;">
+                    <img src="assets/img/logo.png" alt="Alpha Junior School Logo" width="72" height="72" loading="lazy" style="width: 72px; margin-bottom: 16px; border-radius: 8px;">
                     <p>Nurturing excellence through quality education in Chivhu, Zimbabwe.</p>
                     <div class="footer-social">
-                        <a href="https://www.facebook.com/AlphaJuniorSchoolChivhu" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://wa.me/263778376024" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/AlphaJuniorSchoolChivhu" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/263778376024" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <nav class="footer-col" aria-label="Footer Links">
@@ -393,22 +423,20 @@
                     <ul>
                         <li style="color:rgba(255,255,255,0.6); font-size:0.9rem; margin-bottom:10px;"><i class="fas fa-map-marker-alt" style="color:var(--grid-amber); margin-right:8px;"></i>18848 Cloete Street, Chivhu</li>
                         <li style="color:rgba(255,255,255,0.6); font-size:0.9rem; margin-bottom:10px;"><i class="fas fa-phone" style="color:var(--grid-amber); margin-right:8px;"></i><a href="tel:+263778376024" style="color:rgba(255,255,255,0.6);">+263 77 837 6024</a></li>
+                        <li style="color:rgba(255,255,255,0.6); font-size:0.9rem;"><i class="fas fa-envelope" style="color:var(--grid-amber); margin-right:8px;"></i><a href="mailto:info@alphajuniorschool.co.zw" style="color:rgba(255,255,255,0.6);">info@alphajuniorschool.co.zw</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Alpha Junior School, Chivhu. Site by <a href="https://devstudio.co.zw" target="_blank" rel="nofollow">devstudio.co.zw</a></p>
+                <p>&copy; 2026 Alpha Junior School, Chivhu. Site by <a href="https://devstudio.co.zw" target="_blank" rel="noopener">devstudio.co.zw</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Pulse Button -->
-    <a href="https://wa.me/263778376024" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
-        aria-label="Chat with Alpha Junior School on WhatsApp">
+    <a href="https://wa.me/263778376024" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with Alpha Junior School on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Scripts -->
     <script src="assets/js/main.js"></script>
 </body>
 
