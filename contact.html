@@ -3,10 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Rule: Title between 50-60 characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Contact & Admissions | Alpha Junior School Chivhu</title>
-    <!-- SEO Rule: Meta Description between 150-160 characters -->
     <meta name="description"
         content="Contact Alpha Junior School Chivhu for ECD to Grade 4 admissions. Download the enrollment form, WhatsApp us, or email alphajunior2024@gmail.com. Applications for 2026 now open.">
 
@@ -20,18 +18,41 @@
     <link rel="icon" type="image/png" href="assets/img/logo.png">
     <link rel="manifest" href="manifest.json">
 
-    <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
-    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- JSON-LD Structured Data for Contact Page -->
+    <!-- Additional responsive overrides -->
+    <style>
+        @media (max-width: 768px) {
+            .split-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+            .split-grid > div,
+            .split-grid > article {
+                width: 100%;
+            }
+            .steps-list .step-item {
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+            .step-number {
+                flex-shrink: 0;
+            }
+            .contact-info-card {
+                padding: 24px;
+            }
+            .animate-on-scroll.fade-left {
+                padding: 24px;
+            }
+        }
+    </style>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -54,7 +75,6 @@
 
 <body>
 
-    <!-- ===== HEADER ===== -->
     <header>
         <div class="top-bar">
             <div class="container">
@@ -97,13 +117,11 @@
     </header>
 
     <main>
-        <!-- ===== SECTION 1: INNER PAGE HERO ===== -->
         <section class="hero hero-inner-page" style="background-image: url('assets/img/hero-bg.jpg'); min-height: 38vh;" aria-label="Contact Page Hero">
             <div class="hero-inner">
                 <div class="container">
                     <div class="hero-text animate-on-scroll fade-up">
                         <div class="hero-badge"><i class="fas fa-envelope"></i> Admissions &amp; Inquiries</div>
-                        <!-- SEO Rule: Exactly ONE H1 tag per page -->
                         <h1>Contact Our Admissions Team</h1>
                         <p style="max-width: 500px;">Have a question or ready to enroll? Download the enrollment form and submit it to us via WhatsApp or email.</p>
                     </div>
@@ -111,11 +129,9 @@
             </div>
         </section>
 
-        <!-- ===== SECTION 2: CONTACT INFO + ENROLLMENT STEPS ===== -->
         <section class="section-padding" aria-label="Contact Information and Enrollment Steps">
             <div class="container">
                 <div class="split-grid" style="align-items: flex-start; gap: 40px;">
-                    <!-- Left: Contact Info Card -->
                     <div class="animate-on-scroll fade-right">
                         <div class="contact-info-card">
                             <h2>Get in Touch</h2>
@@ -152,12 +168,10 @@
                         </div>
                     </div>
 
-                    <!-- Right: Enrollment Guide (Download + Steps + Buttons) -->
-                    <div class="animate-on-scroll fade-left" style="background: var(--bg-light); padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                    <div class="animate-on-scroll fade-left" style="background: var(--bg-light); padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); overflow-x: hidden;">
                         <h2 style="margin-bottom: 8px;">Enrollment Process</h2>
                         <p style="color: var(--text-muted); margin-bottom: 32px; font-size: 0.92rem;">Follow these simple steps to secure your child's place.</p>
 
-                        <!-- Step-by-step guide -->
                         <div style="margin-bottom: 32px;">
                             <div class="steps-list">
                                 <div class="step-item">
@@ -193,22 +207,21 @@
 
                         <!-- Download Form Button -->
                         <div style="text-align: center; margin-bottom: 28px;">
-                            <a href="assets/files/enrollment-form.docx" download class="btn btn-primary" style="background: #2563EB; width: 100%; justify-content: center;">
+                            <a href="assets/files/Alpha_Junior_School_Enrollment_Form.docx" download class="btn btn-primary" style="background: #2563EB; width: 100%; justify-content: center;">
                                 <i class="fas fa-download"></i> Download Enrollment Form (Word)
                             </a>
                         </div>
 
                         <!-- Big Action Buttons -->
                         <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                            <a href="https://wa.me/263778376024?text=Hello%2C%20I%20would%20like%20to%20submit%20my%20child's%20enrollment%20form." target="_blank" class="btn btn-primary" style="background: #25D366; border-color: #25D366; gap: 12px;">
+                            <a href="https://wa.me/263778376024?text=Hello%2C%20I%20would%20like%20to%20submit%20my%20child's%20enrollment%20form." target="_blank" class="btn btn-primary" style="background: #25D366; border-color: #25D366; gap: 12px; flex: 1; min-width: 200px;">
                                 <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Send via WhatsApp
                             </a>
-                            <a href="mailto:alphajunior2024@gmail.com?subject=Enrollment%20Form%20Submission&body=Dear%20Alpha%20Junior%20School%2C%0A%0APlease%20find%20attached%20my%20child's%20completed%20enrollment%20form.%0A%0AThank%20you." class="btn btn-primary" style="background: #EA4335; border-color: #EA4335; gap: 12px;">
+                            <a href="mailto:alphajunior2024@gmail.com?subject=Enrollment%20Form%20Submission&body=Dear%20Alpha%20Junior%20School%2C%0A%0APlease%20find%20attached%20my%20child's%20completed%20enrollment%20form.%0A%0AThank%20you." class="btn btn-primary" style="background: #EA4335; border-color: #EA4335; gap: 12px; flex: 1; min-width: 200px;">
                                 <i class="fas fa-envelope"></i> Send via Email
                             </a>
                         </div>
 
-                        <!-- Required documents note -->
                         <div style="margin-top: 32px; padding: 16px; background: var(--pure-white); border-radius: var(--radius-sm); border-left: 3px solid var(--accent-indigo);">
                             <h4 style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fas fa-clipboard-list" style="color: var(--accent-indigo); margin-right: 8px;"></i>Documents Required</h4>
                             <ul style="font-size: 0.82rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
@@ -223,7 +236,6 @@
             </div>
         </section>
 
-        <!-- ===== SECTION 3: OPERATING HOURS ===== -->
         <section class="section-padding" style="background: var(--bg-section);" aria-label="Office Operating Hours">
             <div class="container">
                 <div class="section-title animate-on-scroll fade-up">
@@ -253,7 +265,6 @@
             </div>
         </section>
 
-        <!-- ===== SECTION 4: GOOGLE MAP ===== -->
         <section class="section-padding" aria-label="School Location Map">
             <div class="container animate-on-scroll fade-up">
                 <div class="section-title">
@@ -263,7 +274,6 @@
                 <p style="text-align: center; max-width: 560px; margin: -20px auto 32px; color: var(--text-muted);">
                     Located in the heart of Chivhu at 18848 Cloete Street. Our campus is easily accessible from all major local routes.
                 </p>
-                <!-- Google Map Embed -->
                 <div class="map-container">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.453241693441!2d31.006432!3d-19.023448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1932c3842de47f97%3A0x96d8e1d8b6042f5!2sChivhu%2C%20Zimbabwe!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s"
@@ -279,20 +289,18 @@
             </div>
         </section>
 
-        <!-- ===== SECTION 5: FINAL CTA ===== -->
         <section class="cta-banner" aria-label="Final Enrollment CTA">
             <div class="container animate-on-scroll fade-up">
                 <h2>Your Child's Journey Starts Here</h2>
                 <p>Don't wait — spaces are limited for each intake. Apply now and secure your child's spot at Alpha Junior School for the 2026 academic year.</p>
                 <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                    <a href="#ajs-contact-form" class="btn btn-primary"><i class="fas fa-user-plus"></i> Apply for Admission</a>
+                    <a href="#enrollment-process" class="btn btn-primary"><i class="fas fa-user-plus"></i> Apply for Admission</a>
                     <a href="tel:+263778376024" class="btn btn-outline-white"><i class="fas fa-phone"></i> +263 77 837 6024</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -329,13 +337,11 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Pulse Button -->
     <a href="https://wa.me/263778376024" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
         aria-label="Chat with Alpha Junior School on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Scripts -->
     <script src="assets/js/main.js"></script>
 </body>
 
